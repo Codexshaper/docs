@@ -1,0 +1,51 @@
+.VPDoc.has-aside .content-container[data-v-343c73d6] {
+  max-width: 788px;
+}
+
+aside.VPSidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+aside.VPSidebar::-webkit-scrollbar-track,
+aside.VPSidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 100px;
+}
+
+aside.VPSidebar:hover::-webkit-scrollbar-thumb {
+  background: #3451b270;
+}
+
+.vp-doc div[class*="language-"],
+.vp-block,
+.custom-block {
+  border-radius: 2px;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 6px 12px;
+  font-size: 15px;
+}
+
+.cxf--img-wrapper {
+  margin-top: 24px;
+  border: 1px solid #e2e2e3;
+}
+
+.vp-doc :not(pre) > code {
+  text-wrap-mode: nowrap;
+}
+
+p:empty {
+  height: 0;
+  padding: 8px;
+}
+
+table:not([class]) {
+  display: table;
+  white-space: normal;
+  table-layout: auto;
+  width: 100%;
+}

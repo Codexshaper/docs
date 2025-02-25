@@ -4,6 +4,7 @@ export default defineConfig({
   // title: 'assets/lms/dark-logo.svg',
   title: " ",
   description: "",
+  base: "/",
   themeConfig: {
     logo: "assets/lms/dark-logo.svg",
     nav: [{ text: "Documentation", link: "/framework/overview" }],
