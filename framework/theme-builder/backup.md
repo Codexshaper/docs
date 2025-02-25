@@ -14,7 +14,7 @@ The **Theme Builder** allows you to create custom layouts for various sections o
 ## Accessing the Theme Builder
 
 <p class="cxf--img-wrapper">
-    <img src="/assets/framework/images/theme-builder.png" alt="Theme Builder Interface">
+    ![src](/assets/framework/images/theme-builder.png)
 </p>
 
 ## Types of Templates
