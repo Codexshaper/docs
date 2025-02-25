@@ -1,4 +1,4 @@
-## CodexShaper Framework - A MVC framework for Wordpress
+# CodexShaper Framework - A MVC framework for Wordpress
 
 CodexShaper Framework is an MVC-based framework for WordPress, providing a one-stop solution 
 for developers to build and manage WordPress themes and plugins efficiently. With CodexShaper, 

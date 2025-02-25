@@ -1,16 +1,27 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  // title: 'assets/lms/dark-logo.svg',
-  title: " ",
-  description: "",
+  head: [
+    ["link", { rel: "stylesheet", href: "/assets/css/custom.css" }],
+    ["link", { rel: "stylesheet", href: "/assets/css/cxf.css" }],
+    ["script", { src: "/assets/js/custom.js" }],
+  ],
+  title: "CodexShaper",
   base: "/",
   themeConfig: {
-    logo: "assets/lms/dark-logo.svg",
-    nav: [{ text: "Documentation", link: "/framework/overview" }],
+    nav: [
+      {
+        text: "Documentation",
+        items: [
+          { text: "Edulab LMS", link: "/edulab/overview" },
+          { text: "CodexShaper Framework", link: "/framework/overview" },
+        ],
+      },
+    ],
     search: {
-      provider: "local", // Enables built-in search
+      provider: "local",
     },
+    socialLinks: [{ icon: "github", link: "https://github.com/CodexShaper" }],
     sidebar: {
       "/framework/": [
         {
@@ -584,12 +595,5 @@ export default defineConfig({
         },
       ],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
   },
-
-  head: [
-    ["link", { rel: "stylesheet", href: "/assets/css/custom.css" }],
-    ["link", { rel: "stylesheet", href: "/assets/css/cxf.css" }],
-    ["script", { src: "/assets/js/custom.js" }],
-  ],
 });
