@@ -1,0 +1,93 @@
+/* Default (light theme) */
+.theme-logo {
+    content: url("/assets/dark-logo.svg");
+}
+
+/* Dark theme */
+html[data-theme="dark"] .theme-logo {
+    content: url("/assets/logo/logo.svg");
+}
+
+/* 
+.details {
+    text-align: justify;
+} */
+
+/* p {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+p img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+p img:active {
+    transform: scale(1.05);
+}
+
+p::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: block fixed amount
+} */
+
+/* .image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-modal.active {
+    display: flex;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+} */
+
+/* p img {
+  transition: all 0.4;
+  -webkit-transition: all 0.4;
+  -moz-transition: all 0.4;
+  -ms-transition: all 0.4;
+  -o-transition: all 0.4;
+}
+
+p:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: all ease 0.4;
+  -webkit-transition: all ease 0.4;
+  -moz-transition: all ease 0.4;
+  -ms-transition: all ease 0.4;
+  -o-transition: all ease 0.4;
+} */
