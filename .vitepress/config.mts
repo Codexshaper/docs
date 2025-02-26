@@ -146,6 +146,37 @@ export default defineConfig({
         },
 
         {
+          text: "Widgets",
+          collapsed: true,
+          items: [
+            {
+              text: "General Elements",
+              collapsed: true,
+              items: [
+                { text: "Title", link: "/framework/widgets/general-elements/title" },
+                { text: "Text", link: "/framework/widgets/general-elements/text" },
+                { text: "Button", link: "/framework/widgets/general-elements/button" },
+                { text: "Icon Box", link: "/framework/widgets/general-elements/icon-box" },
+                { text: "Image Box", link: "/framework/widgets/general-elements/image-box" },
+                { text: "Video Popup", link: "/framework/widgets/general-elements/video-popup" },
+              ],
+            },
+            {
+              text: "Special Elements",
+              collapsed: true,
+              items: [
+                { text: "Custom Attribute", link: "/framework/extensions/elementor/custom-attribute" },
+              ],
+            },
+            {
+              text: "Post Elements",
+              collapsed: true,
+              items: [{ text: "Custom Font", link: "/framework/extensions/wordpress/custom-font" }],
+            },
+          ],
+        },
+
+        {
           text: "Release",
           collapsed: true,
           items: [
