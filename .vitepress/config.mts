@@ -25,19 +25,17 @@ export default defineConfig({
     sidebar: {
       "/framework/": [
         {
-          text: "Overview",
-          link: "/framework/overview",
-        },
-
-        {
           text: "Getting Started",
           collapsed: false,
-          items: [{ text: "Installation", link: "/framework/Installation" }],
+          items: [
+            { text: "Overview", link: "/framework/overview" },
+            { text: "Installation", link: "/framework/Installation" },
+          ],
         },
 
         {
           text: "Architecture Concept",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "Service Container", link: "/framework/service-container" },
             { text: "Service Provider", link: "/framework/service-provider" },
@@ -47,7 +45,7 @@ export default defineConfig({
 
         {
           text: "Builders",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "Widget Builder", link: "/framework/builder/widget-builder" },
             { text: "CPT Builder", link: "/framework/builder/cpt-builder" },
@@ -58,20 +56,8 @@ export default defineConfig({
         },
 
         {
-          text: "Theme Builders",
-          collapsed: false,
-          items: [
-            { text: "Overview", link: "/framework/theme-builder/overview" },
-            { text: "Header", link: "/framework/theme-builder/header" },
-            { text: "Footer", link: "/framework/theme-builder/footer" },
-            { text: "Archive", link: "/framework/theme-builder/archive" },
-            { text: "Single", link: "/framework/theme-builder/single" },
-          ],
-        },
-
-        {
           text: "Dynamic Builders",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "Dynamic Post Types", link: "/framework/dynamic-post-types" },
             { text: "Dynamic Taxonomies", link: "/framework/dynamic-taxonomies" },
@@ -80,8 +66,55 @@ export default defineConfig({
         },
 
         {
+          text: "Extensions",
+          collapsed: true,
+          items: [
+            {
+              text: "Animation",
+              collapsed: true,
+              items: [
+                { text: "Animation", link: "/framework/extensions/animation/animation" },
+                { text: "Image Animation", link: "/framework/extensions/animation/image-animation" },
+                { text: "Sticky Animation", link: "/framework/extensions/animation/sticky-animation" },
+                { text: "Text Animation", link: "/framework/extensions/animation/text-animation" },
+              ],
+            },
+            {
+              text: "Elementor",
+              collapsed: true,
+              items: [
+                { text: "Custom Attribute", link: "/framework/extensions/elementor/custom-attribute" },
+                { text: "Custom CSS", link: "/framework/extensions/elementor/custom-css" },
+                { text: "Custom Icon", link: "/framework/extensions/elementor/custom-icon" },
+                { text: "Horizontal Scroll", link: "/framework/extensions/elementor/horizontal-scroll" },
+                { text: "Popup", link: "/framework/extensions/elementor/popup" },
+                { text: "Skin", link: "/framework/extensions/elementor/skin" },
+                { text: "Slider", link: "/framework/extensions/elementor/slider" },
+                { text: "Wrapper Link", link: "/framework/extensions/elementor/wrapper-link" },
+              ],
+            },
+            {
+              text: "Wordpress",
+              collapsed: true,
+              items: [{ text: "Custom Font", link: "/framework/extensions/wordpress/custom-font" }],
+            },
+            {
+              text: "Theme Builders",
+              collapsed: true,
+              items: [
+                { text: "Overview", link: "/framework/theme-builder/overview" },
+                { text: "Header", link: "/framework/theme-builder/header" },
+                { text: "Footer", link: "/framework/theme-builder/footer" },
+                { text: "Archive", link: "/framework/theme-builder/archive" },
+                { text: "Single", link: "/framework/theme-builder/single" },
+              ],
+            },
+          ],
+        },
+
+        {
           text: "Field Types",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "Accordion", link: "/framework/fields/accordion" },
             { text: "Backup", link: "/framework/fields/backup" },
@@ -98,17 +131,23 @@ export default defineConfig({
         },
 
         {
+          text: "Settings",
+          collapsed: true,
+          items: [
+            { text: "Module", link: "/framework/settings/modules" },
+            { text: "Extensions", link: "/framework/settings/extensions" },
+            { text: "Integration", link: "/framework/settings/integration" },
+          ],
+        },
+
+        {
           text: "List of Reserved Words",
           link: "/framework/reserved-words",
-        },
-        {
-          text: "Custom Fonts",
-          link: "/framework/custom-fonts",
         },
 
         {
           text: "Release",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "v2.0.0", link: "/framework/releases/v2.0.0" },
             { text: "Initial Release", link: "/framework/releases/initial-release" },
