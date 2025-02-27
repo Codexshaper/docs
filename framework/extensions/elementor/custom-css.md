@@ -6,7 +6,7 @@ The Custom CSS feature in the CodexShaper framework allows developers to add spe
 ## Location
 Go To `Elementor` → `Advanced tab` → `Custom CSS`
 
-<p class="cxf--img-wrapper">
+<p class="cxf--img-wrapper w-max">
     <img src="/public/assets/framework/images/extensions/elementor/custom-css.png" alt="Elementor Custom CSS Interface">
 </p>
 

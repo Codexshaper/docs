@@ -12,16 +12,16 @@ Go to `CodexShaper Framework >> Settings`
 
 ## Managing Extensions
 
-#### Enable/Disable All Extensions
+<!-- #### Enable/Disable All Extensions
 - To enable all extensions, toggle the **Enable All** switch to `YES`.
-- To disable all extensions, toggle the **Disable All** switch to `NO`.
+- To disable all extensions, toggle the **Disable All** switch to `NO`. -->
 
 
-## Managing Individual Extensions
+### Managing Individual Extensions (GSAP)
 
 Each extension can be individually toggled `YES` or `NO` using the toggle switch. Below is detailed information about each available extension.
 
-### 1. GSAP
+#### 1. GSAP
 
 **Purpose:** Integrates the GreenSock Animation Platform (GSAP) for advanced animations.
 
@@ -33,7 +33,7 @@ Each extension can be individually toggled `YES` or `NO` using the toggle switch
 - Performance optimization
 - Timeline-based animation sequencing
 
-### 2. Smooth Scroller
+#### 2. Smooth Scroller
 
 **Purpose:** Provides smooth scrolling behavior for desktop users.
 
@@ -47,7 +47,7 @@ Each extension can be individually toggled `YES` or `NO` using the toggle switch
 **Configuration options:**
 - Smooth Amount: Controls the intensity of the smooth scrolling effect (higher values create slower, more pronounced smoothing)
 
-### 3. Mobile Smooth Scroller
+#### 3. Mobile Smooth Scroller
 
 **Purpose:** Extends smooth scrolling functionality to mobile devices.
 

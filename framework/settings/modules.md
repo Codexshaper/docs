@@ -12,9 +12,9 @@ Go to `CodexShaper Framework >> Settings`
 
 ## Managing Modules
 
-#### Enable/Disable All Modules
+<!-- #### Enable/Disable All Modules
 - To enable all modules, toggle the **Enable All** switch to `YES`.
-- To disable all modules, toggle the **Disable All** switch to `NO`.
+- To disable all modules, toggle the **Disable All** switch to `NO`. -->
 
 #### Enabling or Disabling Each Modules
 - Each module has a toggle switch with `YES/NO` options.

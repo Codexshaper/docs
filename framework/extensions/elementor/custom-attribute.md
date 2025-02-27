@@ -6,7 +6,7 @@ The Custom Attributes feature in the CodexShaper framework allows developers to 
 ## Location
 Go To `Elementor` → `Advanced tab` → `Attributes`
 
-<p class="cxf--img-wrapper">
+<p class="cxf--img-wrapper w-max">
     <img src="/public/assets/framework/images/extensions/elementor/custom-attribute.png" alt="Elementor Custom Attribute Interface">
 </p>
 

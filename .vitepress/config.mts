@@ -74,6 +74,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: "Animation", link: "/framework/extensions/animation/animation" },
+                { text: "Horizontal Scroll", link: "/framework/extensions/animation/horizontal-scroll" },
                 { text: "Image Animation", link: "/framework/extensions/animation/image-animation" },
                 { text: "Sticky Animation", link: "/framework/extensions/animation/sticky-animation" },
                 { text: "Text Animation", link: "/framework/extensions/animation/text-animation" },
@@ -86,7 +87,6 @@ export default defineConfig({
                 { text: "Custom Attribute", link: "/framework/extensions/elementor/custom-attribute" },
                 { text: "Custom CSS", link: "/framework/extensions/elementor/custom-css" },
                 { text: "Custom Icon", link: "/framework/extensions/elementor/custom-icon" },
-                { text: "Horizontal Scroll", link: "/framework/extensions/elementor/horizontal-scroll" },
                 { text: "Popup", link: "/framework/extensions/elementor/popup" },
                 { text: "Skin", link: "/framework/extensions/elementor/skin" },
                 { text: "Slider", link: "/framework/extensions/elementor/slider" },

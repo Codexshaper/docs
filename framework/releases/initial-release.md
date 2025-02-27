@@ -28,6 +28,7 @@ CodexShaper Framework is an MVC-based framework for WordPress, providing a one-s
 
 ## Getting Started
 After activating CodexShaper, you can begin:
+
 - Creating custom post types dynamically.
 - Managing metaboxes and taxonomies with an intuitive UI.
 - Building WordPress themes using the framework’s theme builder.
@@ -35,8 +36,11 @@ After activating CodexShaper, you can begin:
 ## License
 CodexShaper Framework is released under an open-source license. See the LICENSE file for more details.
 
-## Support
-For issues and feature requests, visit our GitHub repository or official support forum.
+## Feedback & Support
+We value your feedback! If you encounter issues or have suggestions, please report them via:
+
+- GitHub Issues: [GitHub Repository Link](https://github.com/Codexshaper/codexshaper-framework)
+- Official Support: codexshaper@gmail.com
 
 ---
 **CodexShaper Framework - Empowering WordPress Developers**

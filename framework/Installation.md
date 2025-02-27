@@ -2,12 +2,10 @@
 
 You can install the **CodexShaper Framework** in two ways:
 
-1. Using as a Plugin (Recommended)
+1. Using as a Plugin **(Recommended)**
 2. Integrating Inside a Theme
 
----
-
-### ✅ Using as a Plugin (Recommended)
+## 1. As a Plugin
 
 1. **Download the Plugin**
 
@@ -21,18 +19,17 @@ You can install the **CodexShaper Framework** in two ways:
 
 3. **Configure the Plugin**
 
-    - Once activated, navigate to the **CodexShaper Framework** Settings to configure the options as needed.
+    - Once activated, navigate to the `Wordpress Dashboard` >> `CodexShaper Framework` to configure the options as needed.
 
----
 
-### 📂 Using Inside a Theme
+## 2. Inside a Theme
 
 1. **Download and Extract the Plugin ZIP**
 
     - Download the **CodexShaper Framework** ZIP file.
     - Extract the ZIP file inside your theme folder. For example:
     ```
-    /wp-content/themes/theme-name/inc/codexshaper-framework
+    {project_root}/wp-content/themes/theme-name/inc/codexshaper-framework
     ```
     - Or, you can place it anywhere within your theme directory.
 

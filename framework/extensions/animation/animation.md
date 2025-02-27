@@ -6,7 +6,7 @@ The Animation extension in the CodexShaper Framework provides developers with co
 ## Location
 Go To `Elementor` → `Advanced tab` → `Animation`
 
-<p class="cxf--img-wrapper">
+<p class="cxf--img-wrapper w-max">
     <img src="/public/assets/framework/images/extensions/animation/animation.png" alt="Elementor Custom Attribute Interface">
 </p>
 
