@@ -146,6 +146,44 @@ export default defineConfig({
         },
 
         {
+          text: "Widgets",
+          collapsed: true,
+          items: [
+            {
+              text: "General Elements",
+              collapsed: true,
+              items: [
+                { text: "Title", link: "/framework/widgets/general-elements/title" },
+                { text: "Text", link: "/framework/widgets/general-elements/text" },
+                { text: "Button", link: "/framework/widgets/general-elements/button" },
+                { text: "Icon Box", link: "/framework/widgets/general-elements/icon-box" },
+                { text: "Image Box", link: "/framework/widgets/general-elements/image-box" },
+                { text: "Video Popup", link: "/framework/widgets/general-elements/video-popup" },
+                { text: "Team Member", link: "/framework/widgets/general-elements/team-member" },
+                { text: "Social Icons", link: "/framework/widgets/general-elements/social-icons" },
+                { text: "Progressbar", link: "/framework/widgets/general-elements/progressbar" },
+                { text: "Marquee", link: "/framework/widgets/general-elements/marquee" },
+              ],
+            },
+            {
+              text: "Special Elements",
+              collapsed: true,
+              items: [
+                { text: "Nav Menu", link: "/framework/widgets/special-elements/nav-menu" },
+                { text: "Offcanvas", link: "/framework/widgets/special-elements/offcanvas" },
+                { text: "Social Share", link: "/framework/widgets/special-elements/social-share" },
+                { text: "Nav Menu", link: "/framework/widgets/special-elements/nav-menu" },
+              ],
+            },
+            {
+              text: "Post Elements",
+              collapsed: true,
+              items: [{ text: "Custom Font", link: "/framework/extensions/wordpress/custom-font" }],
+            },
+          ],
+        },
+
+        {
           text: "Release",
           collapsed: true,
           items: [

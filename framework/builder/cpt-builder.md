@@ -26,7 +26,7 @@ php wp cxf-make:post-type {post_type_name} {post_type_name}
 
 > [!IMPORTANT]
 > You **cannot** use `PostType` as a name since it is a reserved word in the framework.
->  Check [reserved words here](/framework/reserved-words.html).
+>  Check [reserved words here](/framework/reserved-words).
 
 ##### Example:
 ```sh
@@ -198,3 +198,4 @@ class CustomMenu extends PostType {
 ```
 
 Done! Your custom post type is now registered.
+
