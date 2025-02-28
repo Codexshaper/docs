@@ -27,6 +27,7 @@ array(
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |
@@ -58,14 +59,14 @@ array(
 #### Extended Textarea with Additional Attributes
 ```php
 array(
-    'id'           => 'textarea_key_extended',
-    'type'         => 'textarea',
-    'title'        => 'Extended Textarea',
-    'default'      => 'Default multi-line content.',
-    'placeholder'  => 'Enter your text here...',
-    'description'  => 'This textarea field allows for multi-line text input.',
-    'help'         => 'Ensure your content is well formatted.',
-    'attributes'   => array(
+    'id'          => 'textarea_key_extended',
+    'type'        => 'textarea',
+    'title'       => 'Extended Textarea',
+    'default'     => 'Default multi-line content.',
+    'placeholder' => 'Enter your text here...',
+    'description' => 'This textarea field allows for multi-line text input.',
+    'help'        => 'Ensure your content is well formatted.',
+    'attributes'  => array(
         'autocomplete' => 'off',
         'rows'         => 5,
         'cols'         => 50,

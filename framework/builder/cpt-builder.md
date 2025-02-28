@@ -1,6 +1,6 @@
 # Custom Post Type (CPT)
 
-## 1. Using CLI
+<!-- ## 1. Using CLI
 
 ##### General Command:
 ```sh
@@ -42,9 +42,9 @@ Success: The post_type custom-menu's post_type file has been created at ...
 
 ##### Generated Files and Directories:
 
-- **Post Type File:** `/codexshaper-framework/src/PostTypes/CustomMenu.php`
+- **Post Type File:** `/codexshaper-framework/src/PostTypes/CustomMenu.php` -->
 
-## 2. Using Option Builder
+## 1. Using Option Builder
 
 The framework includes a powerful option builder to easily create post types.
 
@@ -54,28 +54,28 @@ use CodexShaper\Framework\Builder\CustomPostType;
 CustomPostType::create(
     'custom_post', // Post Type ID
     array(
-        "post_type"=> "custom_post",
-        "name"=> "Custom posts",
-        "singular_name"=> "Custom post",
-        "plural_name"=> "Custom posts",
-        "supports" => array(
+        "post_type"     => "custom_post",
+        "name"          => "Custom posts",
+        "singular_name" => "Custom post",
+        "plural_name"   => "Custom posts",
+        "supports"      => array(
             "title",
             "editor",
             "author",
             "excerpt",
         ),
-        "rewrite" => array(
-            "slug" => "custom-post",
+        "rewrite"       => array(
+            "slug"       => "custom-post",
             "with_front" => false,
         ),
         "exclude_from_search" => true,
-        "has_archive" => true,
-        "publicly_queryable" => true,
-        "hierarchical" => false,
-        "show_in_menu" => true,
-        "show_ui" => true,
-        "show_in_nav_menus" => true,
-        "menu_icon" => false,
+        "has_archive"         => true,
+        "publicly_queryable"  => true,
+        "hierarchical"        => false,
+        "show_in_menu"        => true,
+        "show_ui"             => true,
+        "show_in_nav_menus"   => true,
+        "menu_icon"           => false,
     )
 );
 ```
@@ -99,7 +99,7 @@ CustomPostType::create(
 
 After executing this code, the `Portfolios` menu will appear in the WordPress dashboard.
 
-## 3. Create from Dashboard
+## 2. Create from Dashboard
 Navigate to `CodexShaper Framework >> Custom Post Types`.
 
 <p class="cmf--img-wrapper">
@@ -125,7 +125,7 @@ Navigate to `CodexShaper Framework >> Custom Post Types`.
 
 Once saved, the new post type appears in the admin panel.
 
-## 4. Creating Manually
+## 3. Creating Manually
 
 ##### Steps:
 1. Navigate to:

@@ -30,6 +30,7 @@ array(
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |
@@ -51,14 +52,14 @@ array(
 #### Enhanced Upload Field for Images
 ```php
 array(
-    'id'              => 'upload_key',
-    'type'            => 'upload',
-    'title'           => 'Upload',
-    'library'         => 'image',
-    'preview'         => true,
-    'placeholder'     => 'Upload from here...',
-    'button_title'    => 'Add Image',
-    'remove_title'    => 'Remove Image',
+    'id'           => 'upload_key',
+    'type'         => 'upload',
+    'title'        => 'Upload',
+    'library'      => 'image',
+    'preview'      => true,
+    'placeholder'  => 'Upload from here...',
+    'button_title' => 'Add Image',
+    'remove_title' => 'Remove Image',
 ),
 ```
 

@@ -1,6 +1,6 @@
-# Creating a Widget in CodexShaper Framework
+# Creating Widget
 
-## 1. Create Using CLI
+<!-- ## 1. Create Using CLI
 
 You can quickly generate a widget using the command-line interface (CLI) in CodexShaper Framework.
 
@@ -65,10 +65,10 @@ Success: The module {module-name}'s JS file has been created. (Only for --slider
 > The JS file is not generated automatically unless the `--slider` flag is used. 
 > You have to create and register it manually for other widget types, If you need.
 > Please See
-> [Creating css & js](#creating-css-js)
+> [Creating css & js](#creating-css-js) -->
 
 
-## 2. Creating Manually
+## 1. Creating Manually
 
 #### Step 1: Navigate to Module Directory
 
@@ -273,7 +273,7 @@ Inside the `views` directory, create a PHP file named `content.view.php`.
 </div>
 ```
 
-## 3. Creating CSS and JS Files (Optional){#creating-css-js}
+## 2. Creating CSS and JS Files (Optional){#creating-css-js}
 
 ###### CSS:
 
@@ -308,8 +308,6 @@ public function register_styles() {
 ```
 
 ###### JS (Required for --slider, Manual for Others):
-
-
 
 ```sh
 # Go to:

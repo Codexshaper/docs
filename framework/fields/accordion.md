@@ -36,14 +36,14 @@ array(
 | Parameter                     | Type        | Default                 | Description |
 |-------------------------------|-------------|-------------------------|-------------|    
 | `accordions`                  | `array`     | -                       | Contains an array of accordion sections. |
-| `title` (inside `accordions`) | `string`    | -                       | Title for each individual accordion section. |
-| `icon`                        | `string`    | `fas fa-angle-right`    | Title for each individual accordion section. |
+| `icon`                        | `string`    | `fas fa-angle-right`    | Icon for each individual section. |
 | `fields`                      | `array`     | -                       | Array of fields contained within the accordion section. |
 
 #### General Parameters
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |

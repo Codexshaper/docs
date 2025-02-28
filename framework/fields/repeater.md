@@ -8,9 +8,9 @@ A simple implementation of the `repeater` field type:
 
 ```php
 array(
-    'id'     => 'repeater_key',
-    'type'   => 'repeater',
-    'title'  => 'Repeater',
+    'id'    => 'repeater_key',
+    'type'  => 'repeater',
+    'title' => 'Repeater',
 ),
 ```
 
@@ -26,6 +26,7 @@ array(
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |
@@ -46,11 +47,11 @@ array(
 
 ```php
 array(
-    'id'     => 'repeater_key',
-    'type'   => 'repeater',
-    'title'  => 'Repeater',
+    'id'           => 'repeater_key',
+    'type'         => 'repeater',
+    'title'        => 'Repeater',
     'button_title' => 'Add',
-    'fields' => array(
+    'fields'       => array(
         array(
             'id'    => 'title',
             'type'  => 'text',

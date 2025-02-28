@@ -58,7 +58,7 @@ Option::create(
 - A **top-level** menu labeled **Option** in the WordPress admin sidebar.
 - Under that menu, a **submenu** labeled **Option Two**.
 
-> [!IMPORTANT]
+> [!WARNING]
 > Even if you successfully create these menus, 
 > they **will not** appear unless you also create at least one **Section** for each `option_key` you used. See below for details.
 

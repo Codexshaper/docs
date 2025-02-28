@@ -32,6 +32,7 @@ array(
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |
@@ -52,10 +53,10 @@ array(
 
 ```php
 array(
-    'id'            => 'media_key',
-    'type'          => 'media',
-    'title'         => 'Field Title',
-    'library'       => array('image', 'video'),
+    'id'      => 'media_key',
+    'type'    => 'media',
+    'title'   => 'Field Title',
+    'library' => array('image', 'video'),
 ),
 ```
 

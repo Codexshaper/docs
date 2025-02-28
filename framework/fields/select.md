@@ -9,16 +9,16 @@ A simple implementation of the `select` field type:
 
 ```php
 array(
-    'id'            => 'select_key',
-    'type'          => 'select',
-    'title'         => 'Select',
-    'placeholder'   => 'Select an option',
-    'options'       => array(
+    'id'          => 'select_key',
+    'type'        => 'select',
+    'title'       => 'Select',
+    'placeholder' => 'Select an option',
+    'options'     => array(
         'option-1' => 'Option 1',
         'option-2' => 'Option 2',
         'option-3' => 'Option 3',
     ),
-    'default'       => 'option-1',
+    'default'     => 'option-1',
 ),
 ```
 
@@ -30,11 +30,11 @@ array(
 | `default`     | `mixed`   | -             | Sets the default selected option(s). |
 | `placeholder` | `string`  | -             | Display text when no option is selected. |
 | `multiple`    | `boolean` | `false`       | Enables multiple selections. |
-| `chosen`      | `boolean` | `false`       | Enhances the select field with search functionality. |
+| `choice`      | `boolean` | `false`       | Enhances the select field with search functionality. |
 | `ajax`        | `boolean` | `false`       | Enables AJAX search for dynamically loading options. |
 | `sortable`    | `boolean` | `false`       | Allows reordering selected options. |
 | `query_args`  | `array`   | `array()`     | Defines parameters for querying dynamic content. |
-| `settings`    | `array`   | `array()`     | Defines parameters for chosen setting. |
+| `settings`    | `array`   | `array()`     | Defines parameters for choice setting. |
 
 #### Available Options (`options`)
 The `options` parameter supports predefined values or dynamically loaded content. Here are some available options:
@@ -80,6 +80,7 @@ When using AJAX-based selections, `query_args` can be used to filter the queried
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |
@@ -128,7 +129,7 @@ array(
     'id'          => 'chose_select_key',
     'type'        => 'select',
     'title'       => 'Select',
-    'chosen'      => true,
+    'choice'      => true,
     'multiple'    => true,
     'placeholder' => 'Select an option',
     'options'     => array(
@@ -148,7 +149,7 @@ array(
     'type'        => 'select',
     'title'       => 'Select with posts',
     'placeholder' => 'Select posts',
-    'chosen'      => true,
+    'choice'      => true,
     'ajax'        => true,
     'multiple'    => true,
     'options'     => array('posts'),
@@ -163,7 +164,7 @@ array(
     'type'        => 'select',
     'title'       => 'Select Custom Post Type',
     'placeholder' => 'Select a post',
-    'chosen'      => true,
+    'choice'      => true,
     'ajax'        => true,
     'options'     => array('posts'),
     'query_args'  => array(
@@ -175,7 +176,7 @@ array(
 ## Notes
 
 - `multiple` allows users to select more than one option.
-- `chosen` enhances the field with a searchable dropdown.
+- `choice` enhances the field with a searchable dropdown.
 - `ajax` should be used when dealing with large datasets to improve performance.
 - `query_args` helps filter specific content dynamically.
 - `sortable` is useful for managing the order of selected items.

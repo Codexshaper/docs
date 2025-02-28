@@ -33,15 +33,15 @@ export default defineConfig({
           ],
         },
 
-        {
-          text: "Architecture Concept",
-          collapsed: true,
-          items: [
-            { text: "Service Container", link: "/framework/service-container" },
-            { text: "Service Provider", link: "/framework/service-provider" },
-            { text: "Facades", link: "/framework/facades" },
-          ],
-        },
+        // {
+        //   text: "Architecture Concept",
+        //   collapsed: true,
+        //   items: [
+        //     { text: "Service Container", link: "/framework/service-container" },
+        //     { text: "Service Provider", link: "/framework/service-provider" },
+        //     { text: "Facades", link: "/framework/facades" },
+        //   ],
+        // },
 
         {
           text: "Builders",
@@ -50,20 +50,20 @@ export default defineConfig({
             { text: "Widget Builder", link: "/framework/builder/widget-builder" },
             { text: "CPT Builder", link: "/framework/builder/cpt-builder" },
             { text: "Taxonomy Builder", link: "/framework/builder/taxonomy-builder" },
-            { text: "Metabox Builder", link: "/framework/builder/metabox-builder" },
+            // { text: "Metabox Builder", link: "/framework/builder/metabox-builder" },
             { text: "Option Builder", link: "/framework/builder/option-builder" },
           ],
         },
 
-        {
-          text: "Dynamic Builders",
-          collapsed: true,
-          items: [
-            { text: "Dynamic Post Types", link: "/framework/dynamic-post-types" },
-            { text: "Dynamic Taxonomies", link: "/framework/dynamic-taxonomies" },
-            { text: "Dynamic Metaboxes", link: "/framework/dynamic-metaboxes" },
-          ],
-        },
+        // {
+        //   text: "Dynamic Builders",
+        //   collapsed: true,
+        //   items: [
+        //     { text: "Dynamic Post Types", link: "/framework/dynamic-post-types" },
+        //     { text: "Dynamic Taxonomies", link: "/framework/dynamic-taxonomies" },
+        //     { text: "Dynamic Metaboxes", link: "/framework/dynamic-metaboxes" },
+        //   ],
+        // },
 
         {
           text: "Extensions",
@@ -74,9 +74,9 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: "Animation", link: "/framework/extensions/animation/animation" },
-                { text: "Horizontal Scroll", link: "/framework/extensions/animation/horizontal-scroll" },
+                // { text: "Horizontal Scroll", link: "/framework/extensions/animation/horizontal-scroll" },
                 { text: "Image Animation", link: "/framework/extensions/animation/image-animation" },
-                { text: "Sticky Animation", link: "/framework/extensions/animation/sticky-animation" },
+                // { text: "Sticky Animation", link: "/framework/extensions/animation/sticky-animation" },
                 { text: "Text Animation", link: "/framework/extensions/animation/text-animation" },
               ],
             },
@@ -86,10 +86,10 @@ export default defineConfig({
               items: [
                 { text: "Custom Attribute", link: "/framework/extensions/elementor/custom-attribute" },
                 { text: "Custom CSS", link: "/framework/extensions/elementor/custom-css" },
-                { text: "Custom Icon", link: "/framework/extensions/elementor/custom-icon" },
-                { text: "Popup", link: "/framework/extensions/elementor/popup" },
-                { text: "Skin", link: "/framework/extensions/elementor/skin" },
-                { text: "Slider", link: "/framework/extensions/elementor/slider" },
+                // { text: "Custom Icon", link: "/framework/extensions/elementor/custom-icon" },
+                // { text: "Popup", link: "/framework/extensions/elementor/popup" },
+                // { text: "Skin", link: "/framework/extensions/elementor/skin" },
+                // { text: "Slider", link: "/framework/extensions/elementor/slider" },
                 { text: "Wrapper Link", link: "/framework/extensions/elementor/wrapper-link" },
               ],
             },
@@ -131,21 +131,6 @@ export default defineConfig({
         },
 
         {
-          text: "Settings",
-          collapsed: true,
-          items: [
-            { text: "Module", link: "/framework/settings/modules" },
-            { text: "Extensions", link: "/framework/settings/extensions" },
-            { text: "Integration", link: "/framework/settings/integration" },
-          ],
-        },
-
-        {
-          text: "List of Reserved Words",
-          link: "/framework/reserved-words",
-        },
-
-        {
           text: "Widgets",
           collapsed: true,
           items: [
@@ -175,19 +160,34 @@ export default defineConfig({
                 { text: "Nav Menu", link: "/framework/widgets/special-elements/nav-menu" },
               ],
             },
-            {
-              text: "Post Elements",
-              collapsed: true,
-              items: [{ text: "Custom Font", link: "/framework/extensions/wordpress/custom-font" }],
-            },
+            // {
+            //   text: "Post Elements",
+            //   collapsed: true,
+            //   items: [{ text: "Custom Font", link: "/framework/extensions/wordpress/custom-font" }],
+            // },
           ],
+        },
+
+        {
+          text: "Settings",
+          collapsed: true,
+          items: [
+            { text: "Module", link: "/framework/settings/modules" },
+            { text: "Extensions", link: "/framework/settings/extensions" },
+            // { text: "Integration", link: "/framework/settings/integration" },
+          ],
+        },
+
+        {
+          text: "List of Reserved Words",
+          link: "/framework/reserved-words",
         },
 
         {
           text: "Release",
           collapsed: true,
           items: [
-            { text: "v2.0.0", link: "/framework/releases/v2.0.0" },
+            // { text: "v2.0.0", link: "/framework/releases/v-demo" },
             { text: "Initial Release", link: "/framework/releases/initial-release" },
           ],
         },

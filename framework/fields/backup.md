@@ -1,27 +1,31 @@
-# Backup Field
+# Field Type: Backup
 
 ## Overview
-The `backup` field type provides options for importing and exporting settings. This is useful for creating backups of configurations or transferring settings between different environments.
+The `backup` field type provides a way to export and import your framework settings or module configurations. This feature allows users to create a backup of their current settings (in JSON format or another structure) and restore them when needed.
+
 
 ## Field Configuration
-Below is the general structure for defining a `backup` field:
+A simple implementation of the `backup` field type:
 
 ```php
 array(
-    'type'  => 'backup',
-),
+    'id'   => 'backup_key',
+    'type' => 'backup',
+);
 ```
 
 #### Specific Parameters
-| Parameter   | Type       | Default   | Description |
-|-------------|------------|-----------|-------------|
-| `type`      | `string`   | -         | Set to `backup` to define a backup field. |
-| `title`     | `string`   | -         | Title for the backup section. |
+
+| Parameter     | Type      | Default       | Description |
+|---------------|-----------|---------------|-------------|
+| `option_name` | `string`  | `field_id`    | The option key under which data is stored and retrieved. |
+| `json_pretty` | `boolean` | `false`       | If `true`, the exported JSON is formatted for readability. |
 
 #### General Parameters
 | Parameter         | Type      | Default           | Description |
 |-------------------|-----------|-------------------|-------------|
 | `id`              | `string`  | -                 | Unique identifier for the field. |
+| `icon`            | `string`  | -                 | Icon for each individual section. |
 | `type`            | `string`  | -                 | Defines the field type. |
 | `title`           | `string`  | -                 | The title displayed for the field. |
 | `subtitle`        | `string`  | -                 | The text displayed under the title. |
@@ -39,22 +43,12 @@ array(
 | `dependencies`    | `array`   | -                 | Show/Hide a field base on another field value. |
 
 ## Example Usage
-Here’s an example of how a backup field might be defined in a settings panel:
 
 ```php
 array(
-    'id'    => 'backup_settings',
-    'type'  => 'backup',
-    'title' => __( 'Backup & Import', 'textdomain' ),
-),
+    'id'          => 'module_backup',
+    'type'        => 'backup',
+    'option_name' => 'cmf_module_settings',
+    'json_pretty' => true,
+);
 ```
-
-## Features
-- **Export Settings:** Allows users to export their configuration settings.
-- **Import Settings:** Provides an option to import previously saved settings.
-- **Backup & Restore:** Helps in creating backups for easy restoration of settings.
-
-## Notes
-- The backup feature simplifies the migration process for settings.
-- Ensures users can restore previous configurations effortlessly.
-- Useful for developers and administrators who need to transfer settings between environments.

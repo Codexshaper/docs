@@ -1,6 +1,6 @@
 # Custom Taxonomy
 
-## 1. Create Using CLI
+<!-- ## 1. Create Using CLI
 
 ##### General Command:
 ```sh
@@ -37,15 +37,16 @@ This command will generate all necessary files and directories to register the T
 
 ##### Expected CLI Response:
 ```
-Success: The taxonomy PortfolioCategory's taxonomy directory has been created at ... <!-- Skipped if Taxonomies directory already exists -->
+Success: The taxonomy PortfolioCategory's taxonomy directory has been created at ... 
+Skipped if Taxonomies directory already exists(for comment)
 Success: The taxonomy PortfolioCategory's taxonomy file has been created at ...
 ```
 
 ##### Generated Files and Directories:
 - **Taxonomy Directory (Skipped if Taxonomies directory already exists):** `/wp-content/plugins/codexshaper-framework/src/Taxonomies`
-- **Taxonomy File:** `/wp-content/plugins/codexshaper-framework/src/Taxonomies/PortfolioCategory.php`
+- **Taxonomy File:** `/wp-content/plugins/codexshaper-framework/src/Taxonomies/PortfolioCategory.php` -->
 
-## 2. Using Option Builder
+## 1. Using Option Builder
 
 A powerful **Option Builder** allows easy creation of taxonomies. 
 
@@ -56,32 +57,32 @@ use CodexShaper\Framework\Builder\CustomTaxonomy;
 CustomTaxonomy::create(
     'custom_taxonomy',
     array(
-        "taxonomy" => "custom_taxonomy",
-        "name" => "Custom Taxonomies",
-        "singular_name" => "Custom Taxonomy",
-        "search_items" => "Search Custom Taxonomies",
-        "all_items" => "All Custom Taxonomies",
-        "parent_item" => "Parent Custom Taxonomy",
+        "taxonomy"          => "custom_taxonomy",
+        "name"              => "Custom Taxonomies",
+        "singular_name"     => "Custom Taxonomy",
+        "search_items"      => "Search Custom Taxonomies",
+        "all_items"         => "All Custom Taxonomies",
+        "parent_item"       => "Parent Custom Taxonomy",
         "parent_item_colon" => "Parent Custom Taxonomy: ",
-        "edit_item" => "Edit Custom Taxonomy",
-        "update_item" => "Update Custom Taxonomy",
-        "add_new_item" => "Add New Custom Taxonomy",
-        "new_item_name" => "New Custom Taxonomy",
-        "menu_name" => "Custom Taxonomy",
-        "object_type" => array("portfolio"),
-        "hierarchical" => true,
-        "show_ui" => true,
+        "edit_item"         => "Edit Custom Taxonomy",
+        "update_item"       => "Update Custom Taxonomy",
+        "add_new_item"      => "Add New Custom Taxonomy",
+        "new_item_name"     => "New Custom Taxonomy",
+        "menu_name"         => "Custom Taxonomy",
+        "object_type"       => array("portfolio"),
+        "hierarchical"      => true,
+        "show_ui"           => true,
         "show_admin_column" => true,
-        "query_var" => true,
-        "rewrite" => array(
-            "slug" => "portfolio-categories", 
+        "query_var"         => true,
+        "rewrite"           => array(
+            "slug"       => "portfolio-categories", 
             "with_front" => false
         ),
-        "public" => true,
+        "public"             => true,
         "publicly_queryable" => true,
-        "show_in_menu" => true,
-        "show_in_nav_menus" => false,
-        "show_in_rest" => false,
+        "show_in_menu"       => true,
+        "show_in_nav_menus"  => false,
+        "show_in_rest"       => false,
     )
 );
 ```
@@ -111,7 +112,7 @@ CustomTaxonomy::create(
 | `show_in_nav_menus`   | `boolean`         | `false`           | If `true`, allows this taxonomy to be used in navigation menus. |
 | `show_in_rest`        | `boolean`         | `false`           | If `true`, exposes the taxonomy in the WordPress REST API. |
 
-## 3. Creating from Dashboard
+## 2. Creating from Dashboard
 Navigate to `CodexShaper Framework >> Custom Taxonomies`.
 
 <p class="cmf--img-wrapper">
@@ -133,7 +134,7 @@ Navigate to `CodexShaper Framework >> Custom Taxonomies`.
 | `Show in Reset`     	| `bool`   	        | `false`       | If `true`, exposes the taxonomy in the WordPress REST API. |
 | `Is Active`        	| `bool`   	        | `true`        | Set this to **Yes** to activate the taxonomy. | 
 
-## 4. Creating Manually
+## 3. Creating Manually
 
 ##### Steps:
 1. Navigate to:
