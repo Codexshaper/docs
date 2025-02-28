@@ -6,7 +6,7 @@ The Extension Settings page allows you to enable or disable functionality extens
 ## Accessing Extension Settings
 Go to `CodexShaper Framework >> Settings`
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/public/assets/framework/images/settings/extension-settings.png" alt="Module Settings Interface">
 </p>
 

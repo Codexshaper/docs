@@ -4,13 +4,13 @@ This widget allows you to create and customizeable content of **Team Member** wi
 
 ## Customize the Content
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_meamber_1.png" alt="">
 </p>
 
 In**Content Tab** under **Layout** section set team member profile image, necessary image settings, name,designation and description as your preference.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_2.1.png" alt="">
 </p>
 
@@ -18,29 +18,29 @@ In **Additional Settings** allow to control lazy load image, image link and name
 
 ## Customize the Content Style
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_2.png" alt="">
 </p>
 
  In **Style Tab** under **Layout** section enable to customize allignment.    
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_3.png" alt="">
 </p>
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_4.png" alt="">
 </p>
 
 **Content** section enable customize content as name, designation, description Style.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_5.png" alt="">
 </p>
 
 **Image** section enable customize Image style.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_6.png" alt="">
 </p>
 

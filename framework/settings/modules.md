@@ -6,7 +6,7 @@ The **CodexShaper Framework** provides an intuitive way to manage various module
 ## Accessing Module Settings
 Go to `CodexShaper Framework >> Settings`
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/public/assets/framework/images/settings/module-settings.png" alt="Module Settings Interface">
 </p>
 

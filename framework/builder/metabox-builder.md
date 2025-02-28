@@ -4,11 +4,11 @@
 
 ##### General Command:
 ```sh
-php wp cxf-make:metabox {custom_metabox_name}
+php wp cmf-make:metabox {custom_metabox_name}
 ```
 ##### With Specific Post Type:
 ```sh
-php wp cxf-make:metabox {custom_metabox_name} --screen={post_type_name}
+php wp cmf-make:metabox {custom_metabox_name} --screen={post_type_name}
 ```
 
 - **`{custom_metabox_name}`** → Your metabox name.
@@ -32,7 +32,7 @@ php wp cxf-make:metabox {custom_metabox_name} --screen={post_type_name}
 
 ##### Example:
 ```sh
-php wp cxf-make:metabox TestMetabox
+php wp cmf-make:metabox TestMetabox
 ```
 
 This command will generate all necessary files and directories to register the Metabox.
@@ -60,7 +60,7 @@ A powerful **Option Builder** allows easy creation of Metaboxes.
 
 ##### Example: Creating `portfolio-option` metabox for `portfolio` post type.
 ```php
-$prefix = 'cxf_metabox';
+$prefix = 'cmf_metabox';
 
 Metabox::create(
 	$prefix . '_portfolio_options',
@@ -110,7 +110,7 @@ Section::create(
 
 #### 1. Creating the Custom Metabox
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/custom-metabox/create-metabox.png" alt="Custom Metabox Interface">
 </p>
 
@@ -136,7 +136,7 @@ After filling in all required fields, click **Save** (top-right corner).
 #### 2. Adding Sections to the Metabox
 Sections help organize fields within your metabox. You can have multiple sections inside a single metabox.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/custom-metabox/create-metabox-section.png" alt="Custom Metabox Section">
 </p>
 
@@ -157,7 +157,7 @@ After filling in all required fields, click **Save** (top-right corner).
 #### 3. Adding Fields to the Sections
 Once you have a Metabox and a Section, you can add Fields to collect or display specific data.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/custom-metabox/create-metabox-section-field.png" alt="Custom Metabox Field">
 </p>
 
@@ -213,7 +213,7 @@ class TestMetabox extends MetaBox
 	}
 
 	public function get_id() {
-        return 'cxf_test_metabox';
+        return 'cmf_test_metabox';
     }
 
 	public function get_title() {
@@ -244,6 +244,6 @@ class TestMetabox extends MetaBox
 }
 ```
 You should see your new **Test Metabox** with the **Sections** and **Fields** you created.
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/custom-metabox/metabox-example.png" alt="Custom Metabox Example">
 </p>

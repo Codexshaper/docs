@@ -4,11 +4,11 @@
 
 ##### General Command:
 ```sh
-php wp cxf-make:taxonomy {custom_taxonomy_name}
+php wp cmf-make:taxonomy {custom_taxonomy_name}
 ```
 ##### With Custom Post Type:
 ```sh
-php wp cxf-make:taxonomy {custom_taxonomy_name} --object={post_type_name}
+php wp cmf-make:taxonomy {custom_taxonomy_name} --object={post_type_name}
 ```
 
 - **`{custom_taxonomy_name}`** → Your taxonomy name.
@@ -30,7 +30,7 @@ php wp cxf-make:taxonomy {custom_taxonomy_name} --object={post_type_name}
 
 ##### Example:
 ```sh
-php wp cxf-make:taxonomy PortfolioCategory
+php wp cmf-make:taxonomy PortfolioCategory
 ```
 
 This command will generate all necessary files and directories to register the Taxonomy.
@@ -114,7 +114,7 @@ CustomTaxonomy::create(
 ## 3. Creating from Dashboard
 Navigate to `CodexShaper Framework >> Custom Taxonomies`.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/custom-taxonomy.png" alt="Custom Taxonomy View">
 </p>
 

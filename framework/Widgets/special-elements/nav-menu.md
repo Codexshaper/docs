@@ -4,7 +4,7 @@ This widget allows you to create and customizeable **Nav Menu** of with submenu.
 
 ## Customize the Content
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_1.png" alt="nav menu">
 </p>
 
@@ -12,31 +12,31 @@ In**Content Tab** under **Main Menu Settings** section enable to customize menu 
 
 ## Customize the Content Style
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_2.png" alt="nav menu">
 </p>
 
  In **Style Tab** under **Main Menu Settings** section enable to customize nesessary layout style of menu.    
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_3.png" alt="nav menu">
 </p>
 
 **Submenu Item** Section enable customize Submenu content Style.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_4.png" alt="nav menu">
 </p>
 
 **Submenu Indicator** section enable customize Indicator Icon style.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_5.png" alt="nav menu">
 </p>
 
 **Pointer** section enable customize Menue item pointer Style.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_6.png" alt="nav menu">
 </p>
 

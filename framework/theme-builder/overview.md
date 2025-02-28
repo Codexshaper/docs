@@ -7,7 +7,7 @@ The **Theme Builder** allows you to create custom layouts for various sections o
 ## Accessing the Theme Builder
 Go to `CodexShaper Framework >> Theme Builder`
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/theme-builder/overview.png" alt="Theme Builder Overview">
 </p>
 

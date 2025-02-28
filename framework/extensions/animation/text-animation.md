@@ -5,7 +5,7 @@ The Text Animation feature in **CodexShaper Framework** enables developers to cr
 ## Location
 Go To `Elementor` → `Content tab` → `Text Animation`
 
-<p class="cxf--img-wrapper w-max">
+<p class="cmf--img-wrapper w-max">
     <img src="/public/assets/framework/images/extensions/animation/text-animation.png" alt="Elementor Text Animation Interface">
 </p>
 

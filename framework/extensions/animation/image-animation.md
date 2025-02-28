@@ -6,7 +6,7 @@ The Image Animation feature in the CodexShaper Framework enables developers to a
 ## Location
 Go To `Elementor` → `Content tab` → `Image Animation`
 
-<p class="cxf--img-wrapper w-max">
+<p class="cmf--img-wrapper w-max">
     <img src="/public/assets/framework/images/extensions/animation/image-animation.png" alt="Elementor Image Animation Interface">
 </p>
 

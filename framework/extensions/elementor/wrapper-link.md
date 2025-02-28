@@ -6,7 +6,7 @@ The Wrapper Link feature is a powerful functionality within the CodexShaper Fram
 ## Location
 Go To `Elementor` → `Advanced tab` → `Wrapper Link`
 
-<p class="cxf--img-wrapper w-max">
+<p class="cmf--img-wrapper w-max">
     <img src="/public/assets/framework/images/extensions/elementor/wrapper-link.png" alt="Elementor Wrapper Link Interface">
 </p>
 

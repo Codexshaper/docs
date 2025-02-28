@@ -2,7 +2,7 @@
 
 This widget allows you to add a title with highlighted words and customizable styles. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Title Widget** in the Elementor panel. Drag and drop it into the desired section of your page.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/title/title_1.png" alt="">
 </p>
 
@@ -15,7 +15,7 @@ This widget allows you to add a title with highlighted words and customizable st
 
 After adding the **CMF Title Widget**, you can further style your text using the **Style** tab. This section allows you to customize both the main text and the highlighted word.  
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/title/title_2.png" alt="">
 </p>
 

@@ -6,7 +6,7 @@ The **CodexShaper Framework** makes it easy to create custom option pages in the
 
 1. Create an **Option** (using `Option::create()`) which defines a top-level or submenu page.
 2. Create at least one **Section** (using `Section::create()`) for each `option_key` you used in `Option::create()`.
-3. **Retrieve option values** using `cxf_get_option()`.
+3. **Retrieve option values** using `cmf_get_option()`.
 
 This document covers both steps—defining **Options** and **Sections**—and describes the parameters available for each.
 
@@ -164,14 +164,14 @@ After adding these sections, your **Option** menus will become visible. Each sec
 
 ## 3. Retrieving Option Values
 
-After creating options and sections, you can retrieve saved values using the `cxf_get_option()` function.
+After creating options and sections, you can retrieve saved values using the `cmf_get_option()` function.
 
 ##### Example Usage
 
 ```php
 // Retrieve a specific option
-$option_one = cxf_get_option( 'option_key_one' );
-$option_two = cxf_get_option( 'option_key_two', 'default_value' );
+$option_one = cmf_get_option( 'option_key_one' );
+$option_two = cmf_get_option( 'option_key_two', 'default_value' );
 
 echo $option_one['option_title_one']; // id of the field
 // Outputs the saved option or 'null' if not set.
@@ -240,7 +240,7 @@ Section::create(
 );
 ```
 You should see your new **Option** with the Sections and Fields you created.
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/option/option-example.png" alt="Option Interface">
 </p>
 
@@ -262,4 +262,4 @@ To create a fully functional options page in the WordPress Admin using the Codex
 
 1. **Create an Option** `Option::create()` to define the menu or submenu.  
 2. **Create at least one Section** `Section::create()` for each `option_key` to ensure your menu is visible.
-3. **Retrieve option values** using `cxf_get_option()`.
+3. **Retrieve option values** using `cmf_get_option()`.

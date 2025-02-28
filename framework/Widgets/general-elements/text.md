@@ -4,7 +4,7 @@ This widget allows you to add and edit text content with various styling options
 
 ## Edit the Text  
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/text/text_1.png" alt="">
 </p>
 
@@ -16,7 +16,7 @@ This widget allows you to add and edit text content with various styling options
 
 ## Customizing Text Styles  
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/text/text_2.png" alt="">
 </p>
 

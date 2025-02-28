@@ -4,7 +4,7 @@ This widget allows you to add popup video. Navigate to the page you want to edit
 
 ## Edit the Content  
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/video-popup/video_popup_1.png" alt="">
 </p>
 
@@ -13,7 +13,7 @@ This widget allows you to add popup video. Navigate to the page you want to edit
 
 ## Customize the Content Style
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/video-popup/video_popup_2.png" alt="">
 </p>
 

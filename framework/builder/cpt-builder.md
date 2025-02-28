@@ -4,14 +4,14 @@
 
 ##### General Command:
 ```sh
-php wp cxf-make:post-type {post_type_name}
+php wp cmf-make:post-type {post_type_name}
 ```
 
 - `{post_type_name}` will be your post type name.
 - To create multiple post types, separate them with spaces.
 
 ```sh
-php wp cxf-make:post-type {post_type_name} {post_type_name}
+php wp cmf-make:post-type {post_type_name} {post_type_name}
 ```
 
 ##### Naming Conventions:
@@ -30,7 +30,7 @@ php wp cxf-make:post-type {post_type_name} {post_type_name}
 
 ##### Example:
 ```sh
-php wp cxf-make:post-type CustomMenu
+php wp cmf-make:post-type CustomMenu
 ```
 
 This command will generate all necessary files and directories to register the custom post type.
@@ -102,7 +102,7 @@ After executing this code, the `Portfolios` menu will appear in the WordPress da
 ## 3. Create from Dashboard
 Navigate to `CodexShaper Framework >> Custom Post Types`.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/custom-post-type.png" alt="Custom Post Type View">
 </p>
 

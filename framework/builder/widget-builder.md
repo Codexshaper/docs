@@ -7,7 +7,7 @@ You can quickly generate a widget using the command-line interface (CLI) in Code
 ##### Command:
 
 ```sh
-php wp cxf-el-module:make {module-name} [options]
+php wp cmf-el-module:make {module-name} [options]
 ```
 
 ##### Available Flags:
@@ -17,20 +17,20 @@ php wp cxf-el-module:make {module-name} [options]
 
 ##### Example:
 ```sh
-php wp cxf-el-module:make custom-menu
+php wp cmf-el-module:make custom-menu
 ```
 ##### Example with Flags:
 - Skipping CSS:
   ```sh
-  php wp cxf-el-module:make custom-menu --skip-css
+  php wp cmf-el-module:make custom-menu --skip-css
   ```
 - Creating a queryable widget:
   ```sh
-  php wp cxf-el-module:make custom-widget --query
+  php wp cmf-el-module:make custom-widget --query
   ```
 - Creating a slider widget (also generates a JS file):
   ```sh
-  php wp cxf-el-module:make custom-slider --slider
+  php wp cmf-el-module:make custom-slider --slider
   ```
 
 ##### Expected CLI Response:
@@ -56,8 +56,8 @@ Success: The module {module-name}'s JS file has been created. (Only for --slider
 - **View Directory:** `/codexshaper-framework/widgets/elementor/views/{module-name}`
 - **View File:** `/codexshaper-framework/widgets/elementor/views/{module-name}/content.view.php`
 - **Config File:** `/codexshaper-framework/widgets/elementor/modules/{module-name}/module.json`
-- **CSS File:** `/codexshaper-framework/widgets/elementor/assets/css/cxf--{module-name}.min.css`
-- **JS File:** `/codexshaper-framework/widgets/elementor/assets/js/cxf--{module-name}.min.js`
+- **CSS File:** `/codexshaper-framework/widgets/elementor/assets/css/cmf--{module-name}.min.css`
+- **JS File:** `/codexshaper-framework/widgets/elementor/assets/js/cmf--{module-name}.min.js`
 
 ---
 
@@ -109,7 +109,7 @@ use CodexShaper\Framework\Foundation\Elementor\Module as BaseModule;
 
 class Module extends BaseModule {
     public function get_name() {
-        return 'cxf--custom-menu';
+        return 'cmf--custom-menu';
     }
 
     public function get_widgets() {
@@ -183,11 +183,11 @@ if (!defined('ABSPATH')) {
 
 class Custom_Menu extends Widget {
     public function get_name() {
-        return 'cxf--custom-menu';
+        return 'cmf--custom-menu';
     }
 
     public function get_title() {
-        return __('CXF Custom Menu', 'textdomain');
+        return __('CMF Custom Menu', 'textdomain');
     }
 
     public function get_icon() {
@@ -195,15 +195,15 @@ class Custom_Menu extends Widget {
     }
 
     public function get_keywords() {
-        return ['Custom Menu', 'CodexShaper', 'Framework', 'CXF'];
+        return ['Custom Menu', 'CodexShaper', 'Framework', 'CMF'];
     }
 
     public function get_categories() {
-        return ['cxf--widget'];
+        return ['cmf--widget'];
     }
 
     public function get_style_depends(): array {
-        return ['cxf--custom-menu'];
+        return ['cmf--custom-menu'];
     }
 
     protected function register_controls() {
@@ -232,7 +232,7 @@ class Custom_Menu extends Widget {
 
     protected function render() {
         $settings = $this->get_settings_for_display();
-        cxf_view('custom-menu.content', compact('settings'));
+        cmf_view('custom-menu.content', compact('settings'));
     }
 }
 ```
@@ -268,7 +268,7 @@ Inside the `views` directory, create a PHP file named `content.view.php`.
 ```php
 <?php if (!defined('ABSPATH')) exit; ?>
 
-<div class="cxf-custom-menu">
+<div class="cmf-custom-menu">
     <p><?php echo esc_html__('This is the Custom Menu widget view.', 'textdomain'); ?></p>
 </div>
 ```
@@ -283,12 +283,12 @@ Inside the `views` directory, create a PHP file named `content.view.php`.
 /{project-root}/wp-content/plugins/codexshaper-framework/widgets/elementor/assets/css/
 ```
 
-Inside css directory, create a CSS file `cxf--{module-name}.min.css`.
+Inside css directory, create a CSS file `cmf--{module-name}.min.css`.
 
 <pre>
 ├── assets
 |   ├── css
-|   |   ├── cxf--custom-menu.min.css
+|   |   ├── cmf--custom-menu.min.css
 |   |   ├── --
 │   ├── js
 │   |
@@ -299,10 +299,10 @@ Register the CSS file in `module.php`:
 ```php
 public function register_styles() {
     wp_register_style(
-        'cxf--custom-menu',
-        $this->get_css_assets_url('cxf--custom-menu', null, true, true),
+        'cmf--custom-menu',
+        $this->get_css_assets_url('cmf--custom-menu', null, true, true),
         [],
-        CXF_APP_VERSION
+        CMF_APP_VERSION
     );
 }
 ```
@@ -317,13 +317,13 @@ public function register_styles() {
 /{project-root}/wp-content/plugins/codexshaper-framework/widgets/elementor/assets/js/
 ```
 
-Inside js directory, create a JS file `cxf--{module-name}.min.js`.
+Inside js directory, create a JS file `cmf--{module-name}.min.js`.
 
 <pre>
 ├── assets
 │   ├── css
 |   ├── js
-|   |   ├── cxf--custom-menu.min.js
+|   |   ├── cmf--custom-menu.min.js
 |   |   ├── --
 │   |
 </pre>
@@ -332,12 +332,12 @@ Register the JS file in `module.php`:
 
 ```php
 public function register_scripts() {
-    $widget_js_file = CXF_PATH . 'widgets/elementor/assets/js/cxf--custom-menu.min.js';
-    $version = file_exists($widget_js_file) ? filemtime($widget_js_file) : CXF_VERSION;
+    $widget_js_file = CMF_PATH . 'widgets/elementor/assets/js/cmf--custom-menu.min.js';
+    $version = file_exists($widget_js_file) ? filemtime($widget_js_file) : CMF_VERSION;
 
     wp_register_script(
-        'cxf--custom-menu',
-        $this->get_js_assets_url('cxf--custom-menu', null, true, true),
+        'cmf--custom-menu',
+        $this->get_js_assets_url('cmf--custom-menu', null, true, true),
         array(),
         $version,
         $widget_js_file,

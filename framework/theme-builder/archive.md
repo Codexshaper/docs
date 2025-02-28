@@ -6,7 +6,7 @@ The **Archive Page Builder** allows you to create custom layouts for blog listin
 Go to `CodexShaper Framework >> Theme Builder`.
 After Click `Add New Theme Builder` you should see an interface like below.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/theme-builder/theme-builder.png" alt="Theme Builder Interface">
 </p>
 

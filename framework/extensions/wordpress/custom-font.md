@@ -7,13 +7,13 @@ The **Custom Fonts** feature in the CodexShaper Framework allows you to upload a
 ## Accessing the Custom Fonts Panel
 Go to `CodexShaper Framework >> Custom Fonts`.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
   <img src="/assets/framework/images/custom-fonts/custom-font-list.png" alt="Custom Font List Interface">
 </p>
 
 After Click `Add New Custom Fonts`, Then you should see an interface like below.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
   <img src="/assets/framework/images/custom-fonts/custom-font.png" alt="Custom Font List Interface">
 </p>
 

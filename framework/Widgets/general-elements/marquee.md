@@ -4,13 +4,13 @@ This widget allows you to create and customizeable content of **Marquee Item** w
 
 ## Customize the Content
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_1.png" alt="marquee">
 </p>
 
 In**Content Tab** under **Layout** section enable to edit content as design with image in repeter item.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_3.png" alt="marquee">
 </p>
 
@@ -18,19 +18,19 @@ In **Slider** allow to customize all avilable slider option.
 
 ## Customize the Content Style
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
    <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_4.png" alt="marquee">
 </p>
 
  In **Style Tab** under **Image heading** option enable to customize image style.    
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
    <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_5.png" alt="marquee">
 </p>
 
 Under **Text** and **Item** heading option enable customize text and item Style.
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_6.png" alt="marquee">
 </p>
 

@@ -4,7 +4,7 @@ This widget allows you to create and customizeable **Progressbar** with Deffernt
 
 ## Customize the Content
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/progressbar/progressbar_1.png" alt="progressbar">
 </p>
 
@@ -12,7 +12,7 @@ In**Content Tab** under **General Settings** section **Type** option enable to s
 
 ## Customize the Content Style
 
-<p class="cxf--img-wrapper">
+<p class="cmf--img-wrapper">
   <img src="/assets/framework/images/widgets/general-elements/progressbar/progressbar_2.png" alt="progressbar">
 </p>
 

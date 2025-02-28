@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   head: [
     ["link", { rel: "stylesheet", href: "/assets/css/custom.css" }],
-    ["link", { rel: "stylesheet", href: "/assets/css/cxf.css" }],
+    ["link", { rel: "stylesheet", href: "/assets/css/cmf.css" }],
     ["script", { src: "/assets/js/custom.js" }],
   ],
   title: "CodexShaper",
