@@ -50,7 +50,7 @@ export default defineConfig({
             { text: "Widget Builder", link: "/framework/builder/widget-builder" },
             { text: "CPT Builder", link: "/framework/builder/cpt-builder" },
             { text: "Taxonomy Builder", link: "/framework/builder/taxonomy-builder" },
-            // { text: "Metabox Builder", link: "/framework/builder/metabox-builder" },
+            { text: "Metabox Builder", link: "/framework/builder/metabox-builder" },
             { text: "Option Builder", link: "/framework/builder/option-builder" },
           ],
         },

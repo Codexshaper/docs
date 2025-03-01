@@ -8,7 +8,7 @@ This widget allows you to add popup video. Navigate to the page you want to edit
     <img src="/assets/framework/images/widgets/general-elements/video-popup/video_popup_1.png" alt="">
 </p>
 
-- Enter your desired video url in the **Video url** field.  
+- Enter your desired video URL in the **Video url** field.  
 - Set button icon.
 
 ## Customize the Content Style

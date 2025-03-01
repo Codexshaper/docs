@@ -1,6 +1,6 @@
 # Icon Box
 
-This widget allows you to create and customizeable content with icon. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **EMF Icon Box** Widget in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable content with icon. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **EMF Icon Box** Widget in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 

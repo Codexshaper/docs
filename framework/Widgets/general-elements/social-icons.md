@@ -1,6 +1,6 @@
 # Social Icons
 
-This widget allows you to create and customizeable social icons of with Title. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Social Icons** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable social icons of with Title. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Social Icons** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
@@ -8,7 +8,7 @@ This widget allows you to create and customizeable social icons of with Title. N
     <img src="/assets/framework/images/widgets/general-elements/social-icons/social_icons_1.png" alt="social icon">
 </p>
 
-In**Content Tab** under **Layout** section set social icons item as your preference.
+In **Content Tab** under **Layout** section set social icons item as your preference.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/social-icons/social_icons_2.png" alt="social icon">
@@ -22,7 +22,7 @@ Customize Icons as your design.
     <img src="/assets/framework/images/widgets/general-elements/social-icons/social_icons_3.png" alt="social icon">
 </p>
 
- In **Style Tab** under **Layoutn Style** section enable to customize nesessary layout style.    
+ In **Style Tab** under **Layout Style** section enable to customize necessary layout style.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/social-icons/social_icons_4.png" alt="social icon">

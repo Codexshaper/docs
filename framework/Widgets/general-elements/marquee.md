@@ -1,6 +1,6 @@
 # Marquee
 
-This widget allows you to create and customizeable content of **Marquee Item** with Image. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Marquee** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable content of **Marquee Item** with Image. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Marquee** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
@@ -8,13 +8,13 @@ This widget allows you to create and customizeable content of **Marquee Item** w
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_1.png" alt="marquee">
 </p>
 
-In**Content Tab** under **Layout** section enable to edit content as design with image in repeter item.
+In **Content Tab** under **Layout** section enable to edit content as design with image in repeater item.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_3.png" alt="marquee">
 </p>
 
-In **Slider** allow to customize all avilable slider option.  
+In **Slider** allow to customize all available slider option.  
 
 ## Customize the Content Style
 

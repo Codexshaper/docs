@@ -1,6 +1,6 @@
 # Social Share
 
-This widget allows you to create and customizeable **Social Share Icon** of with Title. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Social Share** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable **Social Share Icon** of with Title. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Social Share** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
@@ -22,7 +22,7 @@ Customize Icons as your design.
     <img src="/assets/framework/images/widgets/special-elements/social-share/social_share_3.png" alt="social share icon">
 </p>
 
- In **Style Tab** under **Layoutn Style** section enable to customize nesessary layout style.    
+ In **Style Tab** under **Layout Style** section enable to customize necessary layout style.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/social-share/social_share_4.png" alt="social share icon">

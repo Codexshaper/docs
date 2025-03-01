@@ -8,7 +8,7 @@ This widget allows you to create and customizeable **Offcanvas**. Navigate to th
     <img src="/assets/framework/images/widgets/special-elements/offcanvas/offcanvas_1.png" alt="offcanvas">
 </p>
 
-In**Content Tab** under **Layout** section set offcanvas nav menu from menu dropdown and set logo image as your preference.
+In **Content Tab** under **Layout** section set offcanvas nav menu from menu dropdown and set logo image as your preference.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/offcanvas/offcanvas_2.1.png" alt="offcanvas">
@@ -22,7 +22,7 @@ Customize Image, contact info and social icon as you need.
     <img src="/assets/framework/images/widgets/special-elements/offcanvas/offcanvas_2.png" alt="offcanvas">
 </p>
 
- In **Style Tab** under **Menu** section enable to customize nesessary layout with indicator style.    
+ In **Style Tab** under **Menu** section enable to customize necessary layout with indicator style.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/offcanvas/offcanvas_4.png" alt="offcanvas">

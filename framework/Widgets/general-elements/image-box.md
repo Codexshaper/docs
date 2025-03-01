@@ -1,6 +1,6 @@
 # Image Box
 
-This widget allows you to create and customizeable content with Image. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Image Box** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable content with Image. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Image Box** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
@@ -8,7 +8,7 @@ This widget allows you to create and customizeable content with Image. Navigate 
     <img src="/assets/framework/images/widgets/general-elements/image-box/image_box_1.png" alt="">
    </p>
 
-In**Content Tab** under **Layout** section set image and necessary image settings .set title and description as your preparence.
+In **Content Tab** under **Layout** section set image and necessary image settings .set title and description as your preference.
 
   <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/image-box/image_box_2.png" alt="">

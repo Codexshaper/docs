@@ -1,6 +1,6 @@
 # Custom Metabox
 
-## 1. Create Using CLI
+<!-- ## 1. Create Using CLI
 
 ##### General Command:
 ```sh
@@ -39,7 +39,8 @@ This command will generate all necessary files and directories to register the M
 
 ##### Expected CLI Response:
 ```
-Success: The metabox TestMetabox's metabox directory has been created at ... <!-- Skipped if Metaboxes directory already exists -->
+Success: The metabox TestMetabox's metabox directory has been created at ...
+Skipped if Metaboxes directory already exists(for comment)
 Success: The metabox TestMetabox's metabox file has been created at ...
 ```
 
@@ -53,9 +54,9 @@ Success: The metabox TestMetabox's metabox file has been created at ...
 | Method               	| Return         	| Default 	| Description |
 |-----------------------|-------------------|-----------|-------------|
 | `get_screen()`       	| `array\|string` 	| post    	| Specify one or more post types where the metabox should appear. |
-| `register_sections()` | -             	| -       	| Register section and field for the metabox. |
+| `register_sections()` | -             	| -       	| Register section and field for the metabox. | -->
 
-## 2. Using Option Builder
+## 1. Using Option Builder
 A powerful **Option Builder** allows easy creation of Metaboxes. 
 
 ##### Example: Creating `portfolio-option` metabox for `portfolio` post type.
@@ -100,7 +101,7 @@ Section::create(
 | `type`     	| `string`     		| `text`    | Field type. |
 
 
-## 3. Creating from Dashboard
+<!-- ## 3. Creating from Dashboard
 1. In your WordPress Admin Dashboard, navigate to **CodexShaper Framework**
 2. Click on **Custom Metaboxes** in the sidebar.
 3. The process involves three main steps:
@@ -182,9 +183,9 @@ After filling in all required fields, click **Save** (top-right corner).
 
 #### Viewing Your Custom Metabox
 - Go to the post type or taxonomy you attached the metabox to (e.g., **Posts**, **Pages**, **Portfolio**, or a custom post type).
-- Edit or add a new post. You should see your new **Custom Metabox** with the **Sections** and **Fields** you created.
+- Edit or add a new post. You should see your new **Custom Metabox** with the **Sections** and **Fields** you created. -->
 
-## 4. Creating Manually
+## 2. Creating Manually
 
 ##### Steps:
 1. Navigate to:

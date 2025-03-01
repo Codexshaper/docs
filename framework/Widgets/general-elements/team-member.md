@@ -1,6 +1,6 @@
 # Team Member
 
-This widget allows you to create and customizeable content of **Team Member** with Image. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Team Member** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable content of **Team Member** with Image. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Team Member** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
@@ -8,7 +8,7 @@ This widget allows you to create and customizeable content of **Team Member** wi
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_meamber_1.png" alt="">
 </p>
 
-In**Content Tab** under **Layout** section set team member profile image, necessary image settings, name,designation and description as your preference.
+In **Content Tab** under **Layout** section set team member profile image, necessary image settings, name, designation and description as your preference.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_2.1.png" alt="">
@@ -22,7 +22,7 @@ In **Additional Settings** allow to control lazy load image, image link and name
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_2.png" alt="">
 </p>
 
- In **Style Tab** under **Layout** section enable to customize allignment.    
+ In **Style Tab** under **Layout** section enable to customize alignment.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_3.png" alt="">
