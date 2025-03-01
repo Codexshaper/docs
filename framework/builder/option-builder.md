@@ -6,7 +6,7 @@ The **CodexShaper Framework** makes it easy to create custom option pages in the
 
 1. Create an **Option** (using `Option::create()`) which defines a top-level or submenu page.
 2. Create at least one **Section** (using `Section::create()`) for each `option_key` you used in `Option::create()`.
-3. **Retrieve option values** using `cmf_get_option()`.
+3. **Retrieve option values** using `cmf_get_option()` or `cmf_settings()`.
 
 This document covers both steps—defining **Options** and **Sections**—and describes the parameters available for each.
 
@@ -164,20 +164,15 @@ After adding these sections, your **Option** menus will become visible. Each sec
 
 ## 3. Retrieving Option Values
 
-After creating options and sections, you can retrieve saved values using the `cmf_get_option()` function.
+After creating options and sections, you can retrieve saved values using the `cmf_get_option()` or `cmf_settings()` function.
 
 ##### Example Usage
 
 ```php
 // Retrieve a specific option
-$option_one = cmf_get_option( 'option_key_one' );
-$option_two = cmf_get_option( 'option_key_two', 'default_value' );
+$option_one = cmf_settings( 'option_key_one','option_title_one' );
+$option_two = cmf_get_option( 'option_title_two','option_key_two');
 
-echo $option_one['option_title_one']; // id of the field
-// Outputs the saved option or 'null' if not set.
-
-echo $option_two['option_title_two']; // id of the field
-// Outputs the saved option or 'default_value' if not set.
 ```
 
 ## Putting It All Together
