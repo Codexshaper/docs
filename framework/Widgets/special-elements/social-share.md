@@ -22,13 +22,13 @@ Customize Icons as your design.
     <img src="/assets/framework/images/widgets/special-elements/social-share/social_share_3.png" alt="social share icon">
 </p>
 
- In **Style Tab** under **Layout Style** section enable to customize necessary layout style.    
+ In **Style Tab** the **Layout Style** section enable to customize necessary layout style.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/social-share/social_share_4.png" alt="social share icon">
 </p>
 
-Under **Heading Title** heading option enable customize heading Title Style.
+Under **Heading Title** heading options, enable to customize heading Title Style.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/social-share/social_share_5.png" alt="social share icon">

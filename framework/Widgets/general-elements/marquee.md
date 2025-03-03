@@ -8,7 +8,7 @@ This widget allows you to create and customizable content of **Marquee Item** wi
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_1.png" alt="marquee">
 </p>
 
-In **Content Tab** under **Layout** section enable to edit content as design with image in repeater item.
+In **Content Tab** the **Layout** section enable to edit content as design with image in repeater item.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_3.png" alt="marquee">
@@ -22,7 +22,7 @@ In **Slider** allow to customize all available slider option.
    <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_4.png" alt="marquee">
 </p>
 
- In **Style Tab** under **Image heading** option enable to customize image style.    
+ In **Style Tab** the **Image heading** option enable to customize image style.    
 
 <p class="cmf--img-wrapper">
    <img src="/assets/framework/images/widgets/general-elements/marquee/marquee_5.png" alt="marquee">

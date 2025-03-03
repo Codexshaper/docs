@@ -4,7 +4,7 @@ This widget allows you to create and customizable **Search** Bar. Navigate to th
 
 ## Customize the Content
 
-In **Content Tab** under **Search Field** section enable to customize Search layout as your preference.
+In **Content Tab** the **Search Field** section enable to customize Search layout as your preference.
 Select search style from **preset** dropdown menu.
 
 ## Default Preset
@@ -49,7 +49,7 @@ Select search style from **preset** dropdown menu.
     <img src="/assets/framework/images/widgets/special-elements/search/search_2.png" alt="search">
 </p>
 
- In **Style Tab** under **Input Field** section enable to customize necessary style of search Field.    
+ In **Style Tab** the **Input Field** section enable to customize necessary style of search Field.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/search/search_3.png" alt="search">

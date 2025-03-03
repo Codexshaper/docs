@@ -8,7 +8,7 @@ This widget allows you to create and customizable **Recent Post List**. Navigate
     <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_1.png" alt="nav menu">
 </p>
 
-In **Content Tab** under **Layout** section enable to customize post title length image resolution etc as your preference.
+In **Content Tab** the **Layout** section enable to customize post title length image resolution etc as your preference.
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_2.png" alt="nav menu">
@@ -22,7 +22,7 @@ In **Content Tab** under **Layout** section enable to customize post title lengt
     <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_3.png" alt="nav menu">
 </p>
 
- In **Style Tab** under **Layout** section enable to customize necessary layout style of **recent Post**.    
+ In **Style Tab** the **Layout** section enable to customize necessary layout style of **recent Post**.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_4.png" alt="nav menu">
@@ -34,16 +34,11 @@ In **Content Tab** under **Layout** section enable to customize post title lengt
     <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_5.png" alt="nav menu">
 </p>
 
-**Submenu Indicator** section enable customize Indicator Icon style.
+**Content** section enable customize Content style.
 
 <p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_1.png" alt="nav menu">
+    <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_8.png" alt="nav menu">
 </p>
 
-**Pointer** section enable customize Menu item pointer Style.
+**Tag** section enable customize Tag item and list pointer Style.
 
-<p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/post-elements/recent-post/recent_post_1.png" alt="nav menu">
-</p>
-
-**Mobile Menu** section enable customize Mobile Menu Style.

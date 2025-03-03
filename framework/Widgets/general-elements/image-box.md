@@ -20,7 +20,7 @@ In **Additional Settings** control button, Badge and link as you need.
     <img src="/assets/framework/images/widgets/general-elements/image-box/image_box_3.png" alt="">
    </p>
 
-**Button** section Customize button content Check [Button](/framework/Widgets/general-elements/button).
+**Button** section Customize button content Check [Button](/framework/widgets/general-elements/button).
 
 ## Customize the Content Style
 
@@ -52,4 +52,4 @@ In **Additional Settings** control button, Badge and link as you need.
     <img src="/assets/framework/images/widgets/general-elements/image-box/image_box_8.png" alt="">
    </p>
 
-- In the **Button Styling** section you can set style as your design Check [Button](/framework/Widgets/general-elements/button).
+- In the **Button Styling** section you can set style as your design Check [Button](/framework/widgets/general-elements/button).

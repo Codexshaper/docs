@@ -8,7 +8,7 @@ This widget allows you to create and customizable **Nav Menu** of with submenu. 
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_1.png" alt="nav menu">
 </p>
 
-In **Content Tab** under **Main Menu Settings** section enable to customize menu and mobile menu layout as your preference.
+In **Content Tab** the **Main Menu Settings** section enable to customize menu and mobile menu layout as your preference.
 
 ## Customize the Content Style
 
@@ -16,7 +16,7 @@ In **Content Tab** under **Main Menu Settings** section enable to customize menu
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_2.png" alt="nav menu">
 </p>
 
- In **Style Tab** under **Main Menu Settings** section enable to customize necessary layout style of menu.    
+ In **Style Tab** the **Main Menu Settings** section enable to customize necessary layout style of menu.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_3.png" alt="nav menu">

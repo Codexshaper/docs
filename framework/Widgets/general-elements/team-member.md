@@ -22,7 +22,7 @@ In **Additional Settings** allow to control lazy load image, image link and name
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_2.png" alt="">
 </p>
 
- In **Style Tab** under **Layout** section enable to customize alignment.    
+ In **Style Tab** the **Layout** section enable to customize alignment.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/team-member/team_member_3.png" alt="">

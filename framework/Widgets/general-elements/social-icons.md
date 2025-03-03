@@ -22,7 +22,7 @@ Customize Icons as your design.
     <img src="/assets/framework/images/widgets/general-elements/social-icons/social_icons_3.png" alt="social icon">
 </p>
 
- In **Style Tab** under **Layout Style** section enable to customize necessary layout style.    
+ In **Style Tab** the **Layout Style** section enable to customize necessary layout style.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/general-elements/social-icons/social_icons_4.png" alt="social icon">

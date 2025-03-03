@@ -17,7 +17,7 @@ This widget allows you to create and customizable content with icon. Navigate to
    </p>
 Add button if you need.You can control button display from additional settings.
 
-**Button** section enable customize content Check [Button](/framework/Widgets/general-elements/button).
+**Button** section enable customize content Check [Button](/framework/widgets/general-elements/button).
 In **Additional Settings** section you can enable link and badge text. 
 
 ## Customize the Content Style
@@ -44,4 +44,4 @@ In **Additional Settings** section you can enable link and badge text.
     <img src="/assets/framework/images/widgets/general-elements/icon-box/icon_box_6.png" alt="">
    </p>
 
- In the **Button Styling** section you can set style as your design Check [Button](/framework/Widgets/general-elements/button).
+ In the **Button Styling** section you can set style as your design Check [Button](/framework/widgets/general-elements/button).

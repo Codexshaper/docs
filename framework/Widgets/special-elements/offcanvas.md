@@ -1,6 +1,6 @@
 # Offcanvas
 
-This widget allows you to create and customizeable **Offcanvas**. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Offcanvas** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable **Offcanvas**. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Offcanvas** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
@@ -22,7 +22,7 @@ Customize Image, contact info and social icon as you need.
     <img src="/assets/framework/images/widgets/special-elements/offcanvas/offcanvas_2.png" alt="offcanvas">
 </p>
 
- In **Style Tab** under **Menu** section enable to customize necessary layout with indicator style.    
+ In **Style Tab** the **Menu** section enable to customize necessary layout with indicator style.    
 
 <p class="cmf--img-wrapper">
     <img src="/assets/framework/images/widgets/special-elements/offcanvas/offcanvas_4.png" alt="offcanvas">

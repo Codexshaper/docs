@@ -16,4 +16,4 @@ In **Content Tab** under **General Settings** section **Type** option enable to 
   <img src="/assets/framework/images/widgets/general-elements/progressbar/progressbar_2.png" alt="progressbar">
 </p>
 
- In **Style Tab** under **Styling Settings** section enable to customize style of progressbar as your preference.    
+ In **Style Tab** the **Styling Settings** section enable to customize style of progressbar as your preference.    

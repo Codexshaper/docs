@@ -1,43 +1,31 @@
-# Nav Menu
+# Post Meta
 
-This widget allows you to create and customizable **Nav Menu** of with submenu. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Nav Menu** in the Elementor panel. Drag and drop it into the desired section of your page.
+This widget allows you to create and customizable **Post Meta** Content. Navigate to the page you want to edit and open it in **Elementor edit mode**. Find the **CMF Post Meta** in the Elementor panel. Drag and drop it into the desired section of your page.
 
 ## Customize the Content
 
 <p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_1.png" alt="nav menu">
+    <img src="/assets/framework/images/widgets/post-elements/post-meta/post_meta_1.png" alt="post meta">
 </p>
 
-In **Content Tab** under **Main Menu Settings** section enable to customize menu and mobile menu layout as your preference.
+In **Content Tab** the **Layout** section enable to add post meta item with six different meta type and other settings as your preference.
 
 ## Customize the Content Style
 
 <p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_2.png" alt="nav menu">
+    <img src="/assets/framework/images/widgets/post-elements/post-meta/post_meta_2.png" alt="post meta">
 </p>
 
- In **Style Tab** under **Main Menu Settings** section enable to customize necessary layout style of menu.    
+ In **Style Tab** the **List** section enable to customize item gap.    
 
 <p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_3.png" alt="nav menu">
+    <img src="/assets/framework/images/widgets/post-elements/post-meta/post_meta_3.png" alt="post meta">
 </p>
 
-**Submenu Item** Section enable customize Submenu content Style.
+**Icon** Section enable to customize Icon Style.
 
 <p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_4.png" alt="nav menu">
+    <img src="/assets/framework/images/widgets/post-elements/post-meta/post_meta_4.png" alt="post meta">
 </p>
 
-**Submenu Indicator** section enable customize Indicator Icon style.
-
-<p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_5.png" alt="nav menu">
-</p>
-
-**Pointer** section enable customize Menu item pointer Style.
-
-<p class="cmf--img-wrapper">
-    <img src="/assets/framework/images/widgets/special-elements/nav-menu/nav_menu_6.png" alt="nav menu">
-</p>
-
-**Mobile Menu** section enable customize Mobile Menu Style.
+**Text** section enable to customize post meta text style.
