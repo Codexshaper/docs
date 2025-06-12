@@ -244,7 +244,7 @@ export default defineConfig({
 
         {
           text: "Module Management",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "Install Module & Update", link: "/edulab/module/installation" },
             { text: "Enable Module", link: "/edulab/module/enable" },
