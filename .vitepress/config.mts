@@ -544,6 +544,18 @@ export default defineConfig({
         },
 
         {
+          text: "Modules",
+          collapsed: false,
+          items: [
+            {
+              text: "Subscription",
+              collapsed: false,
+              items: [{ text: "Add Subscription", link: "/edulab/module/subscription/add" }],
+            },
+          ],
+        },
+
+        {
           text: "Advanced",
           collapsed: false,
           items: [

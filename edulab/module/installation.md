@@ -101,6 +101,12 @@ ModuleName (parent folder)
 
 ![Enable Module](/assets/lms/images/module/enable-module.png)
 
+### Step 5: Migration
+
+```
+ php artisan module:migrate {name}
+```
+
 ## Updating Composer After Installation
 
 After installing a module, you must update Composer for the system to recognize it. If you see an error like `Class "Modules\Subscribe\Providers\SubscribeServiceProvider" not found`, follow these steps:
