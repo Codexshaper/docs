@@ -237,8 +237,19 @@ export default defineConfig({
           text: "Getting Started",
           collapsed: false,
           items: [
-            { text: "Installation", link: "/edulab/Installation" },
+            { text: "Installation", link: "/edulab/installation" },
             { text: "Update", link: "/edulab/update" },
+          ],
+        },
+
+        {
+          text: "Module Management",
+          collapsed: true,
+          items: [
+            { text: "Install Module & Update", link: "/edulab/module/installation" },
+            { text: "Enable Module", link: "/edulab/module/enable" },
+            { text: "Disable Module", link: "/edulab/module/disable" },
+            { text: "Uninstall Module", link: "/edulab/module/uninstall" },
           ],
         },
 
@@ -529,6 +540,15 @@ export default defineConfig({
                 },
               ],
             },
+          ],
+        },
+
+        {
+          text: "Advanced",
+          collapsed: false,
+          items: [
+            { text: "Composer", link: "/edulab/advanced/composer" },
+            { text: "Cron Jobs", link: "/edulab/advanced/cron-jobs" },
           ],
         },
       ],
