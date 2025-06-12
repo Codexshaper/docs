@@ -109,7 +109,7 @@ ModuleName (parent folder)
 
 ## Updating Composer After Installation
 
-After installing a module, you must update Composer for the system to recognize it. If you see an error like `Class "Modules\Subscribe\Providers\SubscribeServiceProvider" not found`, follow these steps:
+After installing a module, you must update Composer for the system to recognize it. If you see an error like `Class "Modules\Subscription\Providers\SubscriptionServiceProvider" not found`, follow these steps:
 
 ![Service Provider Not Found](/assets/lms/images/module/module-service-provider-composer-load-issue.png)
 
