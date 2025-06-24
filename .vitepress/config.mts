@@ -237,7 +237,7 @@ export default defineConfig({
           text: "Getting Started",
           collapsed: false,
           items: [
-            { text: "Installation", link: "/edulab/installation" },
+            { text: "Installation", link: "/edulab/instal" },
             { text: "Update", link: "/edulab/update" },
           ],
         },
