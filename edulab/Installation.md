@@ -31,7 +31,7 @@ max_execution_time = 300
 
 ```
 
-### TIP
+### TIPS
 
 On this project, we're using the `Laravel 11.x.` Please go to Laravel documentation page for more information.
 
