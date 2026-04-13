@@ -14,6 +14,7 @@ export default defineConfig({
         text: "Documentation",
         items: [
           { text: "Edulab LMS", link: "/edulab/overview" },
+          { text: "SaaS Module", link: "/edulab/module/saas/overview" },
           { text: "CodexShaper Framework", link: "/framework/overview" },
         ],
       },
@@ -381,6 +382,8 @@ export default defineConfig({
                   link: "/edulab/admin/certificate-manage",
                 },
                 { text: "Faq Manage", link: "/edulab/admin/faq-manage" },
+                { text: "Email Templates", link: "/edulab/admin/email-template" },
+                { text: "Notifications", link: "/edulab/admin/notification" },
               ],
             },
 
@@ -548,8 +551,26 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: "Subscription",
+              text: "SaaS (Multi-Tenant LMS)",
               collapsed: false,
+              items: [
+                { text: "Overview", link: "/edulab/module/saas/overview" },
+                { text: "Installation", link: "/edulab/module/saas/install" },
+                { text: "Quick Start", link: "/edulab/module/saas/quick-start" },
+                { text: "Database Modes", link: "/edulab/module/saas/database-modes" },
+                { text: "Plan Management", link: "/edulab/module/saas/plans" },
+                { text: "Billing Settings", link: "/edulab/module/saas/billing-settings" },
+                { text: "Tenant Management", link: "/edulab/module/saas/tenants" },
+                { text: "Billing Management", link: "/edulab/module/saas/billing" },
+                { text: "Invoice Management", link: "/edulab/module/saas/invoices" },
+                { text: "Payment Gateways", link: "/edulab/module/saas/payment-gateways" },
+                { text: "Tenant Portal", link: "/edulab/module/saas/tenant-portal" },
+                { text: "Landing Site", link: "/edulab/module/saas/landing-site" },
+              ],
+            },
+            {
+              text: "Subscription",
+              collapsed: true,
               items: [
                 { text: "Install Subscription", link: "/edulab/module/subscription/install" },
                 { text: "Add New Subscription", link: "/edulab/module/subscription/add-subscription" },
@@ -565,6 +586,8 @@ export default defineConfig({
           items: [
             { text: "Composer", link: "/edulab/advanced/composer" },
             { text: "Cron Jobs", link: "/edulab/advanced/cron-jobs" },
+            { text: "Performance", link: "/edulab/advanced/performance" },
+            { text: "Security", link: "/edulab/advanced/security" },
           ],
         },
       ],

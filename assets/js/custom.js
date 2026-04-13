@@ -5,11 +5,7 @@ function updateLogoBasedOnTheme() {
 
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  console.log(prefersDark);
-
-  const currentTheme =
-    document.documentElement.getAttribute("data-theme") ||
-    (prefersDark ? "dark" : "light");
+  const currentTheme = document.documentElement.getAttribute("data-theme") || (prefersDark ? "dark" : "light");
 
   if (currentTheme === "dark") {
     logo.src = "/assets/logo/dark-logo.svg";
@@ -57,5 +53,3 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("active");
   });
 });
-
-
