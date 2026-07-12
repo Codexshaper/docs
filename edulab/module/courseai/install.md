@@ -52,13 +52,13 @@ Add the following to your `.env` file:
 
 ```env
 COURSEAI_QUEUE_CONNECTION=database   # or: redis
-COURSEAI_QUEUE_NAME=courseai
+COURSEAI_QUEUE_NAME=courseai-ai
 ```
 
 Then run a queue worker:
 
 ```bash
-php artisan queue:work --queue=courseai
+php artisan queue:work --queue=courseai-ai
 ```
 
 > **Note:** Without a queue worker, generation will still work — it just runs in-request and the user waits on the page until the AI responds.

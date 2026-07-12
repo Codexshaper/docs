@@ -386,8 +386,8 @@ POST /api/v1/ai-course/generate/create-course
 **Synchronous response** — creates the course in the DB and returns:
 ```json
 {
-  "message": "Course created successfully.",
   "course_id": 101,
+  "course_title": "Complete Python Bootcamp",
   "redirect_url": "/admin/course/101/edit"
 }
 ```

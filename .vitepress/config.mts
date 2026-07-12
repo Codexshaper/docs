@@ -16,6 +16,7 @@ export default defineConfig({
           { text: "Edulab LMS", link: "/edulab/overview" },
           { text: "Tenanta Module", link: "/edulab/module/saas/overview" },
           { text: "CourseAI Module", link: "/edulab/module/courseai/overview" },
+          { text: "LiveClass Module", link: "/edulab/module/liveclass/overview" },
           { text: "CodexShaper Framework", link: "/framework/overview" },
         ],
       },
