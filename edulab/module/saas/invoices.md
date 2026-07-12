@@ -91,4 +91,4 @@ Invoices include:
 - Payment status
 - Footer with your support email
 
-> **Note:** To customise the invoice PDF template, edit `Modules/SaaS/resources/views/billing/invoice-print.blade.php`.
+> **Note:** To customise the invoice PDF template, edit `Modules/Tenanta/resources/views/billing/invoice-print.blade.php`.

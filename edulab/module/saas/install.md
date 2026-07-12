@@ -1,6 +1,6 @@
-# Installing the SaaS Module
+# Installing the Tenanta Module
 
-Thank you for purchasing the LMS Hub SaaS module! Follow the steps below to install it into your EduLab LMS.
+Thank you for purchasing the LMS Hub Tenanta module! Follow the steps below to install it into your EduLab LMS.
 
 ---
 
@@ -23,22 +23,22 @@ In your admin dashboard, navigate to **Module Manager → Modules** and click th
 
 ---
 
-## Step 02 — Upload the SaaS Module
+## Step 02 — Upload the Tenanta Module
 
-Upload the `SaaS.zip` file you downloaded from CodeCanyon, or paste the module URL.
+Upload the `Tenanta.zip` file you downloaded from CodeCanyon, or paste the module URL.
 
 After uploading, click **Install**.
 
-![Upload SaaS Module](/assets/lms/images/module/saas/upload-module.png)
+![Upload Tenanta Module](/assets/lms/images/module/saas/upload-module.png)
 
 ---
 
 ## Step 03 — Run Composer
 
-The SaaS module adds new PHP dependencies (Stancl Tenancy). The system will attempt to update Composer automatically. If you see the error:
+The Tenanta module adds new PHP dependencies (Stancl Tenancy). The system will attempt to update Composer automatically. If you see the error:
 
 ```
-Class "Modules\SaaS\Providers\SaaSServiceProvider" not found
+Class "Modules\Tenanta\Providers\TenantaServiceProvider" not found
 ```
 
 ![Service Provider Error](/assets/lms/images/module/saas/activate-composer-error.png)
@@ -57,11 +57,11 @@ composer update --no-scripts
 
 ## Step 04 — Activate & Enable the Module
 
-After installation, locate the SaaS module in the list and click **Activate**.
+After installation, locate the Tenanta module in the list and click **Activate**.
 
-![Enable SaaS Module](/assets/lms/images/module/saas/activation-button.png)
+![Enable Tenanta Module](/assets/lms/images/module/saas/activation-button.png)
 
-![Enable SaaS Module](/assets/lms/images/module/saas/activation-form.png)
+![Enable Tenanta Module](/assets/lms/images/module/saas/activation-form.png)
 
 Enabling runs the module's database migrations (creates the `tenants`, `domains`, `tenant_plans`, `tenant_billings`, `tenant_invoices`, and `tenant_payments` tables).
 
@@ -120,9 +120,9 @@ See [Plan Management](./plans) for full details.
 
 ## Step 08 — Verify the Landing Page
 
-Visit your domain root (`https://yourdomain.com`). You should see the SaaS landing page with your pricing plans listed.
+Visit your domain root (`https://yourdomain.com`). You should see the Tenanta landing page with your pricing plans listed.
 
-If you see the default LMS homepage instead, check that the **SaaS module is enabled** and run:
+If you see the default LMS homepage instead, check that the **Tenanta module is enabled** and run:
 
 ```bash
 php artisan route:clear
@@ -133,9 +133,9 @@ php artisan route:cache
 
 ## Disabling the Module
 
-To temporarily disable the SaaS module without uninstalling it, click **Disable** in Module Manager.
+To temporarily disable the Tenanta module without uninstalling it, click **Disable** in Module Manager.
 
-<!-- ![Disable SaaS Module](/assets/lms/images/module/saas/disable-module.png) -->
+<!-- ![Disable Tenanta Module](/assets/lms/images/module/saas/disable-module.png) -->
 
 ---
 
@@ -145,4 +145,4 @@ To fully remove the module and clean up its database tables, click **Uninstall**
 
 > **Warning:** Uninstalling will delete all tenant, billing, and plan data. This is irreversible. Back up your database first.
 
-<!-- ![Uninstall SaaS Module](/assets/lms/images/module/saas/uninstall-module.png) -->
+<!-- ![Uninstall Tenanta Module](/assets/lms/images/module/saas/uninstall-module.png) -->

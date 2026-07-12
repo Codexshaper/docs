@@ -1,18 +1,18 @@
-# SaaS Module Overview
+# Tenanta Module Overview
 
-LMS Hub SaaS is a premium add-on module for EduLab LMS that transforms your single-tenant LMS installation into a full **multi-tenant SaaS platform**. Instead of running one LMS for your own students, you can sell LMS instances to other schools, businesses, and trainers — each getting their own fully isolated LMS.
+LMS Hub Tenanta is a premium add-on module for EduLab LMS that transforms your single-tenant LMS installation into a full **multi-tenant Tenanta platform**. Instead of running one LMS for your own students, you can sell LMS instances to other schools, businesses, and trainers — each getting their own fully isolated LMS.
 
 ---
 
 ## What It Does
 
-When the SaaS module is installed and active, your EduLab application gains:
+When the Tenanta module is installed and active, your EduLab application gains:
 
 - A **public landing site** with a pricing page and marketing sections
 - A **self-service registration form** where customers pick a plan and create their own subdomain
 - **Automated tenant provisioning** — a new, fully isolated LMS instance is created in the background
 - **Subscription billing** — plans, invoices, and payment processing for each tenant
-- A **SaaS admin panel** for managing all tenants, subscriptions, and platform settings
+- A **Tenanta admin panel** for managing all tenants, subscriptions, and platform settings
 - A **tenant owner billing portal** where customers manage their own subscription
 - **Two database modes** — separate databases per tenant or a single shared database
 - **Module manager** — install, enable/disable, and uninstall LMS modules across the platform
@@ -31,7 +31,7 @@ When the SaaS module is installed and active, your EduLab application gains:
 | **Invoice** | A billing document generated each billing cycle |
 | **Payment** | A record of a payment transaction against an invoice |
 | **Trial** | A period where a tenant uses a paid plan for free before their card is charged |
-| **Central Domain** | Your main domain (e.g. `yourdomain.com`) where the SaaS admin panel and landing pages live |
+| **Central Domain** | Your main domain (e.g. `yourdomain.com`) where the Tenanta admin panel and landing pages live |
 | **Tenant Domain** | A subdomain (e.g. `acme.yourdomain.com`) or custom domain assigned to a tenant |
 
 ---
@@ -46,7 +46,7 @@ Central Domain (yourdomain.com)
 ├── /tenant/login              ← Auth\LoginController (web + admin guard)
 ├── /billing                   ← Redirects to first owned tenant billing
 ├── /billing/{tenantId}/*      ← Tenant owner billing portal
-└── /saas/admin/*              ← SaaS admin panel (admin guard)
+└── /tenanta/admin/*              ← Tenanta admin panel (admin guard)
 
 Tenant Subdomains (*.yourdomain.com)
 └── Full EduLab LMS per tenant (isolated DB or tenant_id scoping)
@@ -75,7 +75,7 @@ Tenant Subdomains (*.yourdomain.com)
 ### Admin Management
 - Admin: suspend, reactivate, cancel, renew any subscription
 - Tenant owner: upgrade, downgrade, cancel, toggle auto-renew
-- SaaS admin dashboard with stats (total tenants, revenue, recent activity)
+- Tenanta admin dashboard with stats (total tenants, revenue, recent activity)
 - Module manager with license activation
 - System tools: cache clear/optimize, storage link
 
@@ -100,7 +100,7 @@ Tenant Subdomains (*.yourdomain.com)
 - DNS wildcard record `*.yourdomain.com` pointing to your server (for subdomains)
 - **Separate DB mode only:** MySQL user with `CREATE DATABASE` / `DROP DATABASE` privileges
 
-> **Note:** The SaaS module is a separate purchase from the base EduLab LMS. You need a working EduLab installation before installing this module.
+> **Note:** The Tenanta module is a separate purchase from the base EduLab LMS. You need a working EduLab installation before installing this module.
 
 ---
 
@@ -113,7 +113,7 @@ Tenant Subdomains (*.yourdomain.com)
 | [SaaS Settings](./saas-settings) | Platform settings (database mode, routes, module controls) |
 | [Billing Settings](./billing-settings) | Currency, trials, auto-renewal, gateways, security |
 | [Authentication](./authentication) | Login guards, session isolation, tenant vs central auth |
-| [Admin Dashboard](./admin-dashboard) | SaaS admin panel overview |
+| [Admin Dashboard](./admin-dashboard) | Tenanta admin panel overview |
 | [Tenants](./tenants) | Tenant management (create, view, custom domains) |
 | [Billing](./billing) | Subscription lifecycle, trials, renewal, suspension |
 | [Invoices](./invoices) | Invoice generation, viewing, and PDF export |

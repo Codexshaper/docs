@@ -14,7 +14,8 @@ export default defineConfig({
         text: "Documentation",
         items: [
           { text: "Edulab LMS", link: "/edulab/overview" },
-          { text: "SaaS Module", link: "/edulab/module/saas/overview" },
+          { text: "Tenanta Module", link: "/edulab/module/saas/overview" },
+          { text: "CourseAI Module", link: "/edulab/module/courseai/overview" },
           { text: "CodexShaper Framework", link: "/framework/overview" },
         ],
       },
@@ -551,7 +552,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: "SaaS (Multi-Tenant LMS)",
+              text: "Tenanta (Multi-Tenant LMS)",
               collapsed: false,
               items: [
                 { text: "Overview", link: "/edulab/module/saas/overview" },
@@ -566,6 +567,13 @@ export default defineConfig({
                 { text: "Payment Gateways", link: "/edulab/module/saas/payment-gateways" },
                 { text: "Tenant Portal", link: "/edulab/module/saas/tenant-portal" },
                 { text: "Landing Site", link: "/edulab/module/saas/landing-site" },
+                { text: "Authentication", link: "/edulab/module/saas/authentication" },
+                { text: "SaaS Settings", link: "/edulab/module/saas/saas-settings" },
+                { text: "Module Manager", link: "/edulab/module/saas/module-manager" },
+                { text: "System Tools", link: "/edulab/module/saas/system-tools" },
+                { text: "Route Context Rules", link: "/edulab/module/saas/route-context-rules" },
+                { text: "Module/Tenant Compatibility", link: "/edulab/module/saas/module-tenant-compatibility-rules" },
+                { text: "Environment Variable Reference", link: "/edulab/module/saas/env-reference" },
               ],
             },
             {
@@ -575,6 +583,32 @@ export default defineConfig({
                 { text: "Install Subscription", link: "/edulab/module/subscription/install" },
                 { text: "Add New Subscription", link: "/edulab/module/subscription/add-subscription" },
                 { text: "Subscription Frontend", link: "/edulab/module/subscription/frontend" },
+              ],
+            },
+            {
+              text: "CourseAI",
+              collapsed: true,
+              items: [
+                { text: "Overview", link: "/edulab/module/courseai/overview" },
+                { text: "Installation", link: "/edulab/module/courseai/install" },
+                { text: "Course Creation Wizards", link: "/edulab/module/courseai/create-course" },
+                { text: "Course AI Panel", link: "/edulab/module/courseai/ai-panel" },
+                { text: "Learning Path Builder", link: "/edulab/module/courseai/learning-path" },
+                { text: "AI Usage Report", link: "/edulab/module/courseai/usage-report" },
+                { text: "Configuration & Troubleshooting", link: "/edulab/module/courseai/configuration" },
+                { text: "REST API Reference", link: "/edulab/module/courseai/api-reference" },
+              ],
+            },
+            {
+              text: "LiveClass",
+              collapsed: true,
+              items: [
+                { text: "Overview", link: "/edulab/module/liveclass/overview" },
+                { text: "Installation", link: "/edulab/module/liveclass/install" },
+                { text: "Scheduling & Managing Sessions", link: "/edulab/module/liveclass/scheduling" },
+                { text: "Live Classroom", link: "/edulab/module/liveclass/classroom" },
+                { text: "Configuration & Troubleshooting", link: "/edulab/module/liveclass/configuration" },
+                { text: "REST API Reference", link: "/edulab/module/liveclass/api-reference" },
               ],
             },
           ],

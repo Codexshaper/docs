@@ -1,6 +1,6 @@
 # Environment Variables Reference
 
-All environment variables used by the SaaS module, with their defaults and descriptions.
+All environment variables used by the Tenanta module, with their defaults and descriptions.
 
 ---
 
@@ -13,19 +13,19 @@ All environment variables used by the SaaS module, with their defaults and descr
 
 ---
 
-## SaaS Settings Defaults
+## Tenanta Settings Defaults
 
 These are used when no value has been saved in the database yet. Once an admin saves settings via the UI, the database value takes precedence.
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SAAS_ALLOW_MODE_SWITCH_WITH_EXISTING_TENANTS` | `false` | Allow switching DB mode when tenants exist |
-| `SAAS_ALLOW_MODULE_UNINSTALL` | `true` | Allow module uninstallation from Module Manager |
-| `SAAS_ALLOW_RESOURCE_DELETION` | `false` | Allow destructive deletion of module data during uninstall |
-| `SAAS_ENABLE_ADMIN_ROUTES` | `false` | Enable LMS admin panel on central domain |
-| `SAAS_ENABLE_STUDENT_PANEL_ROUTES` | `false` | Enable student panel on central domain |
-| `SAAS_ENABLE_TEACHER_PANEL_ROUTES` | `false` | Enable teacher panel on central domain |
-| `SAAS_ENABLE_PARENT_PANEL_ROUTES` | `false` | Enable parent panel on central domain |
+| `TENANTA_ALLOW_MODE_SWITCH_WITH_EXISTING_TENANTS` | `false` | Allow switching DB mode when tenants exist |
+| `TENANTA_ALLOW_MODULE_UNINSTALL` | `true` | Allow module uninstallation from Module Manager |
+| `TENANTA_ALLOW_RESOURCE_DELETION` | `false` | Allow destructive deletion of module data during uninstall |
+| `TENANTA_ENABLE_ADMIN_ROUTES` | `false` | Enable LMS admin panel on central domain |
+| `TENANTA_ENABLE_STUDENT_PANEL_ROUTES` | `false` | Enable student panel on central domain |
+| `TENANTA_ENABLE_TEACHER_PANEL_ROUTES` | `false` | Enable teacher panel on central domain |
+| `TENANTA_ENABLE_PARENT_PANEL_ROUTES` | `false` | Enable parent panel on central domain |
 
 ---
 
@@ -33,15 +33,15 @@ These are used when no value has been saved in the database yet. Once an admin s
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SAAS_BILLING_ENABLED` | `true` | Master billing toggle |
-| `SAAS_TRIAL_ENABLED` | `true` | Enable free trial for paid plans |
-| `SAAS_TRIAL_CARD_REQUIRED` | `false` | Require payment card to start a trial |
-| `SAAS_TRIAL_CARD_VERIFICATION_AMOUNT` | `0` | Amount to authorize when trial requires card (0 = verify only) |
-| `SAAS_TRIAL_DAYS` | `14` | Number of trial days |
-| `SAAS_FREE_PLAN_ENABLED` | `true` | Allow free plan registration |
-| `SAAS_AUTO_RENEWAL_ENABLED` | `true` | Enable automatic subscription renewal |
-| `SAAS_AUTO_RENEWAL_REMINDER_DAYS` | `7` | Days before renewal to send reminder email |
-| `SAAS_TRIAL_ENDING_REMINDER_DAYS` | `3` | Days before trial end to send warning email |
+| `TENANTA_BILLING_ENABLED` | `true` | Master billing toggle |
+| `TENANTA_TRIAL_ENABLED` | `true` | Enable free trial for paid plans |
+| `TENANTA_TRIAL_CARD_REQUIRED` | `false` | Require payment card to start a trial |
+| `TENANTA_TRIAL_CARD_VERIFICATION_AMOUNT` | `0` | Amount to authorize when trial requires card (0 = verify only) |
+| `TENANTA_TRIAL_DAYS` | `14` | Number of trial days |
+| `TENANTA_FREE_PLAN_ENABLED` | `true` | Allow free plan registration |
+| `TENANTA_AUTO_RENEWAL_ENABLED` | `true` | Enable automatic subscription renewal |
+| `TENANTA_AUTO_RENEWAL_REMINDER_DAYS` | `7` | Days before renewal to send reminder email |
+| `TENANTA_TRIAL_ENDING_REMINDER_DAYS` | `3` | Days before trial end to send warning email |
 
 ---
 
@@ -49,10 +49,10 @@ These are used when no value has been saved in the database yet. Once an admin s
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SAAS_REQUIRE_EMAIL_VERIFICATION` | `true` | Require email verification before billing |
-| `SAAS_REQUIRE_PAYMENT_VERIFICATION` | `true` | Verify payments before activating subscriptions |
-| `SAAS_ENABLE_AUDIT_LOGGING` | `true` | Log billing settings changes |
-| `SAAS_ENCRYPT_PAYMENT_DATA` | `true` | Encrypt payment data at rest |
+| `TENANTA_REQUIRE_EMAIL_VERIFICATION` | `true` | Require email verification before billing |
+| `TENANTA_REQUIRE_PAYMENT_VERIFICATION` | `true` | Verify payments before activating subscriptions |
+| `TENANTA_ENABLE_AUDIT_LOGGING` | `true` | Log billing settings changes |
+| `TENANTA_ENCRYPT_PAYMENT_DATA` | `true` | Encrypt payment data at rest |
 
 ---
 
@@ -60,10 +60,10 @@ These are used when no value has been saved in the database yet. Once an admin s
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SAAS_REGISTRATION_TRIAL_DEFAULT` | `true` | Default to trial option during registration |
-| `SAAS_ALLOW_PAY_NOW_OPTION` | `true` | Show "Pay Now" option during registration |
-| `SAAS_MIN_PASSWORD_LENGTH` | `8` | Minimum password length for tenant registration (range: 6–64) |
-| `SAAS_REQUIRE_PASSWORD_CONFIRMATION` | `true` | Show password confirmation field during registration |
+| `TENANTA_REGISTRATION_TRIAL_DEFAULT` | `true` | Default to trial option during registration |
+| `TENANTA_ALLOW_PAY_NOW_OPTION` | `true` | Show "Pay Now" option during registration |
+| `TENANTA_MIN_PASSWORD_LENGTH` | `8` | Minimum password length for tenant registration (range: 6–64) |
+| `TENANTA_REQUIRE_PASSWORD_CONFIRMATION` | `true` | Show password confirmation field during registration |
 
 ---
 
@@ -83,12 +83,12 @@ These control the database and cache key names. You typically don't need to chan
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SAAS_BILLING_SETTINGS_KEY` | `saas_billing_settings` | `theme_settings` table key for billing settings |
-| `SAAS_BILLING_LEGACY_SETTINGS_KEY` | `billing_settings` | Legacy key (read for backward compatibility) |
-| `SAAS_BILLING_CACHE_KEY` | `saas_billing_settings` | Cache key for billing settings |
-| `SAAS_BILLING_LEGACY_CACHE_KEY` | `billing_settings` | Legacy cache key |
-| `SAAS_BILLING_PAYMENT_METHODS_CACHE_KEY` | `saas_billing_settings_payment_methods` | Cache key for payment methods |
-| `SAAS_BILLING_LEGACY_PAYMENT_METHODS_CACHE_KEY` | `billing_settings_payment_methods` | Legacy payment methods cache key |
+| `TENANTA_BILLING_SETTINGS_KEY` | `tenanta_billing_settings` | `theme_settings` table key for billing settings |
+| `TENANTA_BILLING_LEGACY_SETTINGS_KEY` | `billing_settings` | Legacy key (read for backward compatibility) |
+| `TENANTA_BILLING_CACHE_KEY` | `tenanta_billing_settings` | Cache key for billing settings |
+| `TENANTA_BILLING_LEGACY_CACHE_KEY` | `billing_settings` | Legacy cache key |
+| `TENANTA_BILLING_PAYMENT_METHODS_CACHE_KEY` | `tenanta_billing_settings_payment_methods` | Cache key for payment methods |
+| `TENANTA_BILLING_LEGACY_PAYMENT_METHODS_CACHE_KEY` | `billing_settings_payment_methods` | Legacy payment methods cache key |
 
 ---
 
@@ -96,17 +96,17 @@ These control the database and cache key names. You typically don't need to chan
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SAAS_TENANT_DEMO_SQL_FILE` | `tenant-demo.sql` | SQL file for separate-DB mode demo import |
-| `SAAS_DEFAULT_DEMO_SQL_FILE` | `demo.sql` | Fallback SQL file when tenant-specific file is missing |
-| `SAAS_TENANT_DEMO_DATA_FILE` | `tenant-demo-data.php` | PHP array file for single-DB mode demo import |
-| `SAAS_DEFAULT_DEMO_DATA_FILE` | `demo-data.php` | Fallback PHP file when tenant-specific file is missing |
-| `SAAS_TENANT_DEMO_BLOCKED_EMAILS` | `admin@gmail.com` | Comma-separated emails to exclude from demo admin import |
+| `TENANTA_TENANT_DEMO_SQL_FILE` | `tenant-demo.sql` | SQL file for separate-DB mode demo import |
+| `TENANTA_DEFAULT_DEMO_SQL_FILE` | `demo.sql` | Fallback SQL file when tenant-specific file is missing |
+| `TENANTA_TENANT_DEMO_DATA_FILE` | `tenant-demo-data.php` | PHP array file for single-DB mode demo import |
+| `TENANTA_DEFAULT_DEMO_DATA_FILE` | `demo-data.php` | Fallback PHP file when tenant-specific file is missing |
+| `TENANTA_TENANT_DEMO_BLOCKED_EMAILS` | `admin@gmail.com` | Comma-separated emails to exclude from demo admin import |
 
 ---
 
 ## Payment Gateway Keys
 
-These are not SaaS-specific but are required for payment gateways to function:
+These are not Tenanta-specific but are required for payment gateways to function:
 
 | Variable | Description |
 |----------|-------------|
@@ -126,7 +126,7 @@ See [Payment Gateways](./payment-gateways) for gateway-specific setup instructio
 ## Example `.env` Section
 
 ```env
-# === SaaS Core ===
+# === Tenanta Core ===
 TENANT_DATABASE_MODE=separate
 TENANT_PROVISIONING_DRIVER=sync
 
@@ -134,19 +134,19 @@ TENANT_PROVISIONING_DRIVER=sync
 BILLING_CURRENCY=USD
 BILLING_CYCLE=monthly
 INVOICE_PREFIX=INV
-SAAS_BILLING_ENABLED=true
-SAAS_TRIAL_ENABLED=true
-SAAS_TRIAL_DAYS=14
-SAAS_FREE_PLAN_ENABLED=true
-SAAS_AUTO_RENEWAL_ENABLED=true
+TENANTA_BILLING_ENABLED=true
+TENANTA_TRIAL_ENABLED=true
+TENANTA_TRIAL_DAYS=14
+TENANTA_FREE_PLAN_ENABLED=true
+TENANTA_AUTO_RENEWAL_ENABLED=true
 
 # === Security ===
-SAAS_REQUIRE_EMAIL_VERIFICATION=true
-SAAS_ENCRYPT_PAYMENT_DATA=true
+TENANTA_REQUIRE_EMAIL_VERIFICATION=true
+TENANTA_ENCRYPT_PAYMENT_DATA=true
 
 # === Route Toggles ===
-SAAS_ENABLE_ADMIN_ROUTES=false
-SAAS_ENABLE_STUDENT_PANEL_ROUTES=false
-SAAS_ENABLE_TEACHER_PANEL_ROUTES=false
-SAAS_ENABLE_PARENT_PANEL_ROUTES=false
+TENANTA_ENABLE_ADMIN_ROUTES=false
+TENANTA_ENABLE_STUDENT_PANEL_ROUTES=false
+TENANTA_ENABLE_TEACHER_PANEL_ROUTES=false
+TENANTA_ENABLE_PARENT_PANEL_ROUTES=false
 ```

@@ -2,7 +2,7 @@
 
 Tenants are your customers' LMS instances. Each tenant has its own isolated database, subdomain, and billing record.
 
-Navigate to **Admin → SaaS Admin → Tenants** to see all tenants.
+Navigate to **Admin → Tenanta Admin → Tenants** to see all tenants.
 
 ![Tenant List](/assets/lms/images/module/saas/tenant-list.png)
 
@@ -30,7 +30,7 @@ While most tenants self-register, an admin can provision a tenant directly.
 Click **Create New Tenant** (or use the Artisan command):
 
 ```bash
-php artisan saas:tenant:create acme
+php artisan tenanta:tenant:create acme
 ```
 
 This creates the tenant record, the subdomain domain entry, and runs migrations on the new tenant database.
@@ -104,5 +104,5 @@ php artisan tenants:migrate --tenants={tenant_id}
 ```bash
 php artisan tinker
 # Then:
-\Modules\SaaS\Jobs\CreateTenantAdminJob::dispatch($tenant);
+\Modules\Tenanta\Jobs\CreateTenantAdminJob::dispatch($tenant);
 ```

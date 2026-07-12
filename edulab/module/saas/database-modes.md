@@ -1,4 +1,4 @@
-# SaaS Database Modes
+# Tenanta Database Modes
 
 This page explains the tenancy database architecture options and how to choose the right mode for your deployment.
 
@@ -6,7 +6,7 @@ This page explains the tenancy database architecture options and how to choose t
 
 ## Available Modes
 
-EduLab SaaS supports two database isolation strategies:
+EduLab Tenanta supports two database isolation strategies:
 
 | Mode | Description | Use Case |
 |------|-------------|----------|
@@ -57,7 +57,7 @@ TENANT_DATABASE_MODE=single
 
 ### How It Works
 
-1. When single mode is activated, the SaaS module runs **Tenant Column Synchronization** — it scans all module migrations and adds a `tenant_id` column to every tenant-owned table.
+1. When single mode is activated, the Tenanta module runs **Tenant Column Synchronization** — it scans all module migrations and adds a `tenant_id` column to every tenant-owned table.
 2. **Unique Index Synchronization** adjusts unique constraints to include `tenant_id`, preventing cross-tenant uniqueness conflicts.
 3. Eloquent models are automatically scoped via the **Auto Tenant Model Scope Manager** — every query includes `WHERE tenant_id = ?` transparently.
 
@@ -77,7 +77,7 @@ TENANT_DATABASE_MODE=single
 
 ## Changing the Mode
 
-Navigate to **SaaS Admin → Settings** and change the **Database Mode** dropdown.
+Navigate to **Tenanta Admin → Settings** and change the **Database Mode** dropdown.
 
 ### Important Rules
 
@@ -95,14 +95,14 @@ Navigate to **SaaS Admin → Settings** and change the **Database Mode** dropdow
 | Setting | ENV Variable | Default | Purpose |
 |---------|-------------|---------|---------|
 | Database Mode | `TENANT_DATABASE_MODE` | `separate` | Which isolation strategy to use |
-| Allow Mode Switch | `SAAS_ALLOW_MODE_SWITCH_WITH_EXISTING_TENANTS` | `false` | Allow switching when tenants exist |
+| Allow Mode Switch | `TENANTA_ALLOW_MODE_SWITCH_WITH_EXISTING_TENANTS` | `false` | Allow switching when tenants exist |
 
 ---
 
 ## Configuration Reference
 
 ```php
-// Modules/SaaS/config/config.php
+// Modules/Tenanta/config/config.php
 'tenant_database_mode' => env('TENANT_DATABASE_MODE', 'separate')
 ```
 

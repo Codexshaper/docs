@@ -1,8 +1,8 @@
 # Module Manager
 
-The SaaS Module Manager allows platform administrators to install, activate, enable/disable, and uninstall LMS modules from the SaaS admin panel.
+The Tenanta Module Manager allows platform administrators to install, activate, enable/disable, and uninstall LMS modules from the Tenanta admin panel.
 
-Navigate to **SaaS Admin → Module Manager** or go to `/saas/module-manager/`.
+Navigate to **Tenanta Admin → Module Manager** or go to `/tenanta/module-manager/`.
 
 ---
 
@@ -54,7 +54,7 @@ Some modules require license activation before they can be used.
 
 ### Activate
 
-Navigate to **Module Manager → {Module} → Activate** or `GET /saas/module-manager/{module}/activate`.
+Navigate to **Module Manager → {Module} → Activate** or `GET /tenanta/module-manager/{module}/activate`.
 
 Enter your purchase code and email. The system validates the license and marks the module as activated.
 
@@ -68,7 +68,7 @@ Use the **Deactivate** button to remove the license binding. This does not unins
 
 ## Uninstalling Modules
 
-Uninstalling a module removes it from the system. This operation is controlled by two SaaS settings:
+Uninstalling a module removes it from the system. This operation is controlled by two Tenanta settings:
 
 | Setting | Effect |
 |---------|--------|
@@ -78,11 +78,11 @@ Uninstalling a module removes it from the system. This operation is controlled b
 
 > **Warning:** With **Allow Resource Deletion** enabled, uninstalling is irreversible. Always back up before proceeding.
 
-### SaaS Module Self-Protection
+### Tenanta Module Self-Protection
 
-The SaaS module has special protections when uninstalling itself:
+The Tenanta module has special protections when uninstalling itself:
 - Tenant cleanup is attempted before removal
-- If SaaS classes are unavailable (e.g., autoloader removed), a fallback cleanup runs
+- If Tenanta classes are unavailable (e.g., autoloader removed), a fallback cleanup runs
 - The module dynamically re-registers its autoloader if needed during uninstall
 
 ---
@@ -93,6 +93,6 @@ All module operations (enable, disable, install, uninstall) run through a consol
 
 | Route | Purpose |
 |-------|---------|
-| `GET /saas/module-manager/console/{id}` | View console output |
-| `POST /saas/module-manager/console/{id}/start` | Start the queued operation |
-| `GET /saas/module-manager/console/{id}/poll` | Poll for output updates (AJAX) |
+| `GET /tenanta/module-manager/console/{id}` | View console output |
+| `POST /tenanta/module-manager/console/{id}/start` | Start the queued operation |
+| `GET /tenanta/module-manager/console/{id}/poll` | Poll for output updates (AJAX) |

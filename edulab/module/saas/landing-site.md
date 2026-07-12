@@ -1,6 +1,6 @@
 # Landing Site
 
-The SaaS module includes a complete public-facing landing site served from your root domain. It is built with Tailwind CSS v4 and is fully responsive.
+The Tenanta module includes a complete public-facing landing site served from your root domain. It is built with Tailwind CSS v4 and is fully responsive.
 
 ---
 
@@ -33,20 +33,20 @@ The home page is assembled from Blade components. Each section can be customised
 | Testimonials | `components/frontend/testimonial.blade.php` |
 | Footer | `components/frontend/footer.blade.php` |
 
-To disable a section, comment it out in `Modules/SaaS/resources/views/index.blade.php`.
+To disable a section, comment it out in `Modules/Tenanta/resources/views/index.blade.php`.
 
 ---
 
 ## Pricing Page
 
-The pricing page at `/pricing` fetches plan data from the database via `SaaSService::getLandingData()`. It supports:
+The pricing page at `/pricing` fetches plan data from the database via `TenantaService::getLandingData()`. It supports:
 
 - **Monthly / Annual toggle** — switches between billing cycles via JavaScript
 - **Savings badge** — shows the `yearly_discount_percent` for annual plans
 - **"Most Popular" badge** — applied to plans with `is_featured = true`
 - **Contact Sales button** — rendered for plans with a `cta_url` set
 
-> **Note:** The landing CSS is a pre-compiled file at `Modules/SaaS/resources/assets/landing/css/app.css`. If you add new utility classes, you must add them to this file — it is not processed by Tailwind JIT at runtime.
+> **Note:** The landing CSS is a pre-compiled file at `Modules/Tenanta/resources/assets/landing/css/app.css`. If you add new utility classes, you must add them to this file — it is not processed by Tailwind JIT at runtime.
 
 ---
 
@@ -61,8 +61,8 @@ The header and mobile menu both include links to:
 - Contact (`/contact`)
 
 To edit the navigation, modify:
-- `Modules/SaaS/resources/views/components/frontend/header.blade.php`
-- `Modules/SaaS/resources/views/components/frontend/mobile-menu.blade.php`
+- `Modules/Tenanta/resources/views/components/frontend/header.blade.php`
+- `Modules/Tenanta/resources/views/components/frontend/mobile-menu.blade.php`
 
 ---
 
@@ -72,22 +72,22 @@ To edit the navigation, modify:
 
 Replace the logo files at:
 ```
-Modules/SaaS/resources/assets/landing/images/logo/logo-dark.png
-Modules/SaaS/resources/assets/landing/images/logo/logo-light.png
+Modules/Tenanta/resources/assets/landing/images/logo/logo-dark.png
+Modules/Tenanta/resources/assets/landing/images/logo/logo-light.png
 ```
 
 ### Hero Image
 
 Replace:
 ```
-Modules/SaaS/resources/assets/landing/images/hero/hero-primary-image.png
+Modules/Tenanta/resources/assets/landing/images/hero/hero-primary-image.png
 ```
 
 ### Fonts
 
 The landing site uses **Remix Icon** for icons. Icon font files are at:
 ```
-Modules/SaaS/resources/assets/landing/fonts/remix/
+Modules/Tenanta/resources/assets/landing/fonts/remix/
 ```
 
 ---
@@ -105,7 +105,7 @@ The landing CSS variables control the colour scheme. Edit `variables.css`:
 }
 ```
 
-After editing, serve the file via the asset route (`/saas-landing-assets/...`) or copy it to `public/modules/saas/landing/`.
+After editing, serve the file via the asset route (`/tenanta-landing-assets/...`) or copy it to `public/modules/tenanta/landing/`.
 
 ---
 
@@ -114,7 +114,7 @@ After editing, serve the file via the asset route (`/saas-landing-assets/...`) o
 Landing assets are served dynamically by the application via the route:
 
 ```
-/saas-landing-assets/{path}
+/tenanta-landing-assets/{path}
 ```
 
-The `LandingController::asset()` method streams files from `Modules/SaaS/resources/assets/landing/`. No `php artisan storage:link` is needed for these assets.
+The `LandingController::asset()` method streams files from `Modules/Tenanta/resources/assets/landing/`. No `php artisan storage:link` is needed for these assets.

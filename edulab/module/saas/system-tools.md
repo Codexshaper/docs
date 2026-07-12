@@ -1,6 +1,6 @@
 # System Tools
 
-The SaaS admin panel includes system management tools for cache control, storage, license management, and admin profile settings.
+The Tenanta admin panel includes system management tools for cache control, storage, license management, and admin profile settings.
 
 ---
 
@@ -8,7 +8,7 @@ The SaaS admin panel includes system management tools for cache control, storage
 
 ### Clear Cache
 
-**SaaS Admin → Cache Clear** or `POST /saas/admin/cache-clear`
+**Tenanta Admin → Cache Clear** or `POST /tenanta/admin/cache-clear`
 
 Runs `php artisan optimize:clear`, which clears:
 - Configuration cache
@@ -21,7 +21,7 @@ Use this after making configuration changes or deploying new code.
 
 ### Optimize Cache
 
-**SaaS Admin → Cache Optimize** or `POST /saas/admin/cache-optimize`
+**Tenanta Admin → Cache Optimize** or `POST /tenanta/admin/cache-optimize`
 
 Runs `php artisan optimize`, which caches:
 - Configuration files
@@ -34,7 +34,7 @@ Use this in production to improve performance. Not recommended during developmen
 
 ## Storage Link
 
-**SaaS Admin → Storage Link** or `POST /saas/admin/storage-link`
+**Tenanta Admin → Storage Link** or `POST /tenanta/admin/storage-link`
 
 Runs `php artisan storage:link`, which creates a symbolic link from `public/storage` to `storage/app/public`.
 
@@ -46,9 +46,9 @@ This is required for serving uploaded files (logos, avatars, course materials) t
 
 ### View / Update License
 
-**SaaS Admin → License** or `GET /saas/admin/license`
+**Tenanta Admin → License** or `GET /tenanta/admin/license`
 
-Enter your license code and email to activate or update your SaaS module license. The license data is stored in `matrix.json` in your project root.
+Enter your license code and email to activate or update your Tenanta module license. The license data is stored in `matrix.json` in your project root.
 
 | Field | Description |
 |-------|-------------|
@@ -61,13 +61,13 @@ Enter your license code and email to activate or update your SaaS module license
 
 ### View Profile
 
-**SaaS Admin → Profile** or `GET /saas/admin/profile`
+**Tenanta Admin → Profile** or `GET /tenanta/admin/profile`
 
-View and update the currently logged-in SaaS admin's profile information.
+View and update the currently logged-in Tenanta admin's profile information.
 
 ### Update Profile
 
-`POST /saas/admin/profile`
+`POST /tenanta/admin/profile`
 
 | Field | Required | Description |
 |-------|----------|-------------|

@@ -28,7 +28,7 @@
 
 ### v2.0.0 — 2025-03-08
 
-- SaaS multi-tenant module improvements
+- Tenanta multi-tenant module improvements
 - Multi-database tenant support (separate DB per tenant)
 - Shared DB tenant mode improvements
 - ModuleManager improvements

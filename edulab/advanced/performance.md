@@ -14,7 +14,7 @@ EduLab LMS is optimised out of the box for shared hosting. This page covers the 
 | Application config state | `lms_app_cfg` | 2 hours | License is activated / removed |
 | Language list | `languages` singleton | Per-request | — |
 
-Cache is **tenant-aware** when the SaaS module is active — the tenancy bootstrapper automatically prefixes cache keys per tenant.
+Cache is **tenant-aware** when the Tenanta module is active — the tenancy bootstrapper automatically prefixes cache keys per tenant.
 
 ---
 

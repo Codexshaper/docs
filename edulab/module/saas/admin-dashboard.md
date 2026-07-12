@@ -1,6 +1,6 @@
-# SaaS Admin Dashboard
+# Tenanta Admin Dashboard
 
-The SaaS admin dashboard provides an overview of your multi-tenant platform at a glance. Access it at **SaaS Admin → Dashboard** or navigate to `/saas/admin/`.
+The Tenanta admin dashboard provides an overview of your multi-tenant platform at a glance. Access it at **Tenanta Admin → Dashboard** or navigate to `/tenanta/admin/`.
 
 ---
 
@@ -41,36 +41,36 @@ The 6 most recently generated invoices with:
 
 ## Tenant List
 
-Click **View All Tenants** or navigate to **SaaS Admin → Tenants** to see a paginated list of all tenants (20 per page). Each entry shows the tenant's billing status, current plan, and associated domains.
+Click **View All Tenants** or navigate to **Tenanta Admin → Tenants** to see a paginated list of all tenants (20 per page). Each entry shows the tenant's billing status, current plan, and associated domains.
 
 ---
 
 ## Admin Panel Navigation
 
-The SaaS admin panel sidebar provides access to:
+The Tenanta admin panel sidebar provides access to:
 
 | Section | Path | Description |
 |---------|------|-------------|
-| Dashboard | `/saas/admin/` | Overview stats and recent activity |
-| Tenants | `/saas/admin/tenants` | Full tenant list with management |
-| Tenant CRUD | `/saas/` | Create, edit, view, delete tenants |
-| Settings | `/saas/admin/settings` | SaaS platform settings |
+| Dashboard | `/tenanta/admin/` | Overview stats and recent activity |
+| Tenants | `/tenanta/admin/tenants` | Full tenant list with management |
+| Tenant CRUD | `/tenanta/` | Create, edit, view, delete tenants |
+| Settings | `/tenanta/admin/settings` | Tenanta platform settings |
 | Billing Settings | `/admin/billing/settings` | Currency, trials, gateways, security |
 | Plans | `/admin/billing/plans` | Subscription plan management |
 | Billings | `/admin/billing/billings` | Subscription management |
 | Invoices | `/admin/billing/invoices` | Invoice management |
 | Payments | `/admin/billing/payments` | Payment records |
-| Module Manager | `/saas/module-manager/` | Module installation and management |
-| Profile | `/saas/admin/profile` | Admin profile and password |
-| License | `/saas/admin/license` | License key management |
+| Module Manager | `/tenanta/module-manager/` | Module installation and management |
+| Profile | `/tenanta/admin/profile` | Admin profile and password |
+| License | `/tenanta/admin/license` | License key management |
 
 ---
 
 ## Access Control
 
-The SaaS admin panel is protected by:
+The Tenanta admin panel is protected by:
 
 1. **`auth:admin`** middleware — requires login with the `admin` guard
-2. **`EnsureCentralSaaSAdmin`** middleware — blocks tenant-scoped admins from accessing the central panel
+2. **`EnsureCentralTenantaAdmin`** middleware — blocks tenant-scoped admins from accessing the central panel
 
-Only admins with a `null` value in the `tenant_id` column can access the SaaS admin panel. See [Authentication](./authentication) for details.
+Only admins with a `null` value in the `tenant_id` column can access the Tenanta admin panel. See [Authentication](./authentication) for details.

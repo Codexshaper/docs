@@ -1,6 +1,6 @@
 # Provisioning Console
 
-When a new tenant registers (and completes payment, if required), the SaaS module runs a provisioning pipeline that creates the tenant record, database, and seed data. The **Provisioning Console** shows this process in real time via a terminal-style UI.
+When a new tenant registers (and completes payment, if required), the Tenanta module runs a provisioning pipeline that creates the tenant record, database, and seed data. The **Provisioning Console** shows this process in real time via a terminal-style UI.
 
 ---
 
@@ -15,9 +15,9 @@ When a new tenant registers (and completes payment, if required), the SaaS modul
 
 | Method | URI | Name |
 |--------|-----|------|
-| `GET` | `/tenant/register/setup/{id}` | `saas.provisioning.console` |
-| `POST` | `/tenant/register/setup/{id}/start` | `saas.provisioning.console.start` |
-| `GET` | `/tenant/register/setup/{id}/poll` | `saas.provisioning.console.poll` |
+| `GET` | `/tenant/register/setup/{id}` | `tenanta.provisioning.console` |
+| `POST` | `/tenant/register/setup/{id}/start` | `tenanta.provisioning.console.start` |
+| `GET` | `/tenant/register/setup/{id}/poll` | `tenanta.provisioning.console.poll` |
 
 ---
 
@@ -40,7 +40,7 @@ If any step fails, partial resources (tenant record, database, domain) are autom
 
 ## Enable / Disable
 
-The console is controlled by a SaaS setting:
+The console is controlled by a Tenanta setting:
 
 | Setting | Default |
 |---------|---------|
@@ -48,7 +48,7 @@ The console is controlled by a SaaS setting:
 
 When **disabled**, the registration flow shows a simple progress spinner instead of the terminal output. The provisioning still runs the same pipeline — only the UI changes.
 
-Toggle this in **SaaS Admin → Settings** or via the `SAAS_PROVISIONING_CONSOLE_ENABLED` environment variable.
+Toggle this in **Tenanta Admin → Settings** or via the `TENANTA_PROVISIONING_CONSOLE_ENABLED` environment variable.
 
 ---
 

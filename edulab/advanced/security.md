@@ -50,11 +50,11 @@ All routes that modify data use `POST`, `PUT`, or `DELETE` methods. No data-muta
 
 ---
 
-## SaaS Security (when SaaS module is active)
+## Tenanta Security (when Tenanta module is active)
 
 - Tenant subscription enforcement middleware is **fail-closed**: a database error returns `503`, not a bypass.
 - Tenants without an active subscription and no billing setup receive a `402` response.
-- SaaS API routes require `auth:admin` guard.
+- Tenanta API routes require `auth:admin` guard.
 
 ---
 

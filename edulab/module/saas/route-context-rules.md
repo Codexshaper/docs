@@ -1,26 +1,26 @@
-# SaaS Route Context Rules (For Module Developers)
+# Tenanta Route Context Rules (For Module Developers)
 
-This guide defines how to make module routes compatible with both SaaS central domain and tenant domain.
+This guide defines how to make module routes compatible with both Tenanta central domain and tenant domain.
 
 ## Why This Matters
 
-In SaaS mode, EduLab has two contexts:
+In Tenanta mode, EduLab has two contexts:
 
-- Central context: main SaaS/admin domain
+- Central context: main Tenanta/admin domain
 - Tenant context: tenant subdomains
 
-Core modules now use SaaS settings flags to decide which panel routes become universal. Custom modules should follow the same pattern.
+Core modules now use Tenanta settings flags to decide which panel routes become universal. Custom modules should follow the same pattern.
 
 ## Source of Truth
 
 Do not hardcode route exposure defaults in services or controllers.
 
-Use SaaS config defaults from:
+Use Tenanta config defaults from:
 
-- `Modules/SaaS/config/config.php`
+- `Modules/Tenanta/config/config.php`
 - `settings_defaults` keys
 
-Runtime overrides come from SaaS settings stored in `saas_settings` via `SaaSSettingsService`.
+Runtime overrides come from Tenanta settings stored in `tenanta_settings` via `TenantaSettingsService`.
 
 ## Current Core Mapping
 
@@ -46,17 +46,17 @@ In your module `RouteServiceProvider`:
 1. Build both middleware stacks:
    - universal stack: `web + bootstrap + TenantAwareMiddlewareProvider::getUniversalMiddleware()`
    - tenant stack: `TenantAwareMiddlewareProvider::getTenantWebMiddleware()`
-2. Read SaaS settings safely with fallback:
-   - defaults from `config('saas.settings_defaults.*')`
-   - if SaaS module is active and `SaaSSettingsService` is available, merge runtime settings
+2. Read Tenanta settings safely with fallback:
+   - defaults from `config('tenanta.settings_defaults.*')`
+   - if Tenanta module is active and `TenantaSettingsService` is available, merge runtime settings
 3. Register each route file with either universal or tenant middleware based on flag.
 
 ## Safe Fallback Rules
 
 Always handle these cases gracefully:
 
-- SaaS module disabled
-- SaaS settings service unavailable
+- Tenanta module disabled
+- Tenanta settings service unavailable
 - exceptions during settings read
 
 In all those cases, use config defaults and continue route registration.
@@ -82,7 +82,7 @@ Context switching (universal vs tenant-only) must stay in `RouteServiceProvider`
 
 After implementing route-context support:
 
-1. Save SaaS settings with all flags disabled:
+1. Save Tenanta settings with all flags disabled:
    - panel routes should not be reachable from central domain
 2. Enable one flag at a time:
    - only that panel should become central-accessible

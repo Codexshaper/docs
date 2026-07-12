@@ -2,17 +2,17 @@
 
 This guide defines how to build new modules so they work in all cases:
 
-- LMS only (SaaS module not installed)
-- SaaS enabled with separate database mode
-- SaaS enabled with single shared database mode
+- LMS only (Tenanta module not installed)
+- Tenanta enabled with separate database mode
+- Tenanta enabled with single shared database mode
 
 ## Golden Rules
 
-1. SaaS is optional.
+1. Tenanta is optional.
 2. Separate DB mode remains the default safe production path.
 3. Single shared DB mode must isolate tenant rows using tenant_id.
-4. New modules should not require manual per-model SaaS wiring.
-5. Do not add `TenantOwnedModel` manually to each model; global auto-scope handles this when SaaS is enabled.
+4. New modules should not require manual per-model Tenanta wiring.
+5. Do not add `TenantOwnedModel` manually to each model; global auto-scope handles this when Tenanta is enabled.
 
 ## Module.json Rules
 
@@ -35,9 +35,9 @@ Use these `module.json` keys to define behavior:
 
 ## What Is Global Now
 
-When SaaS module is enabled:
+When Tenanta module is enabled:
 
-- Global auto model scoping is registered from SaaS provider.
+- Global auto model scoping is registered from Tenanta provider.
 - It reads module rules from each `Modules/{Module}/module.json`.
 - It applies tenant_id query scope and auto-fill only in:
   - single shared DB mode,
@@ -48,16 +48,16 @@ Manual trait wiring is no longer needed for module models.
 
 Implementation location:
 
-- Global model scope injection is implemented inside SaaS module.
-- Core modules (LMS, Roles, ModuleManager, etc.) stay clean and SaaS-independent.
+- Global model scope injection is implemented inside Tenanta module.
+- Core modules (LMS, Roles, ModuleManager, etc.) stay clean and Tenanta-independent.
 
 Central requests are not blocked because no scope is applied when tenancy is not initialized.
 
 ## Migration Rule (tenant_id injection)
 
-The SaaS migration that adds `tenant_id` columns now merges exemptions from:
+The Tenanta migration that adds `tenant_id` columns now merges exemptions from:
 
-1. hard defaults (infrastructure + SaaS central tables),
+1. hard defaults (infrastructure + Tenanta central tables),
 2. `tenancy.single_db.exempt_tables` config,
 3. each module.json key:
    - `tenant_scope_exempt_tables`
@@ -67,12 +67,12 @@ This lets hybrid modules control table-level behavior without changing core code
 
 Important:
 
-- The schema preparation migration lives in SaaS module, not LMS core.
-- Therefore, non-SaaS installations are not affected.
+- The schema preparation migration lives in Tenanta module, not LMS core.
+- Therefore, non-Tenanta installations are not affected.
 
-## Optional SaaS Safety
+## Optional Tenanta Safety
 
-If SaaS/stancl is absent, tenant helpers/classes may not exist.
+If Tenanta/stancl is absent, tenant helpers/classes may not exist.
 
 Always guard tenancy usage with:
 
@@ -133,7 +133,7 @@ So forcing every class to extend one `EdulabModel` would add migration effort an
 Current standard in this project:
 
 - Keep existing model inheritance.
-- Use global SaaS auto-scope manager for tenant row isolation logic.
+- Use global Tenanta auto-scope manager for tenant row isolation logic.
 - Control behavior through `module.json` policies.
 
 No core-module base class migration is required.

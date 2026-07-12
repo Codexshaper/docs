@@ -1,6 +1,6 @@
 # Payment Gateways
 
-The SaaS module supports 7 payment gateways out of the box. Enable and configure gateways under **Admin → Billing → Settings → Payment Methods**.
+The Tenanta module supports 7 payment gateways out of the box. Enable and configure gateways under **Admin → Billing → Settings → Payment Methods**.
 
 ---
 

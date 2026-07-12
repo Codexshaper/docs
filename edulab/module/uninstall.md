@@ -1,4 +1,4 @@
-# UnInstall Module
+# Uninstall Module
 
 
 ## Go to your admin panel and select `Module Manager >> Modules` 

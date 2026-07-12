@@ -4,7 +4,7 @@ You can see the module listed, and you need to click the "Enable" button to acti
 
 ![src](/assets/lms/images/module/enable-module.png)
 
-### If you are seeing `Class "Modules\Subscribe\Providers\SubscribeServiceProvider" not found` which means your module does't recognize by the system. To solve the problem you need to run `composer update` or `composer dump-autoload`.
+### If you are seeing `Class "Modules\Subscription\Providers\SubscriptionServiceProvider" not found` (or a similar error naming a different module's service provider), it means your module isn't recognized by the system yet. To solve the problem you need to run `composer update` or `composer dump-autoload`.
 
 ### Composer update. Go to your project root dir `cd /path/to/project_root/` using SSH and run `composer update`
 

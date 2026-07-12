@@ -1,6 +1,6 @@
 # Quick Start
 
-Get your SaaS platform up and running in under 10 minutes.
+Get your Tenanta platform up and running in under 10 minutes.
 
 ---
 
@@ -108,7 +108,7 @@ After successful provisioning, the user is redirected to a success page with a l
 
 ## Step 05 — View the New Tenant
 
-In **Admin → SaaS Admin → Tenants**, you will see the newly created tenant listed with its subdomain and billing status.
+In **Admin → Tenanta Admin → Tenants**, you will see the newly created tenant listed with its subdomain and billing status.
 
 Click on the tenant to view its details.
 
